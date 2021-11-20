@@ -326,10 +326,17 @@ a:visited, a:link{
 }
 
 .link{
+  position: relative;
   background-color: white;
-  padding-left: 55px;
+  padding-left: 50px;
   height: 100px;
 }
+
+.kruskal-buttons{
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
 
 /* small devices */
 @media(min-width: 0px) and (max-width: 699px){
