@@ -1,4 +1,24 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Spline+Sans+Mono');
+
+#app {
+  color: #272626;
+  margin: 40px;
+}
+
+.red {
+  color: #FF5B5B;
+}
+
+.blue {
+  color: #5B61FF;
+}
+
+.yellow {
+  color: #FFED49;
+}
+
+/* @import './base.css';
 
 #app {
   max-width: 1280px;
@@ -32,4 +52,4 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-}
+} */
