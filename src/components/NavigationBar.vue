@@ -1,63 +1,73 @@
 <template>
-    <div class="navigation-bar">
-        <div class="list">
-            <ul>
-                <li id="logo"><img height="64px" src="../assets/logo-stripes.svg" /></li>
-                <li>Gallery</li>
-                <li>Photography</li>
-                <li>Design</li>
-                <li>Resume</li>
-                <li>Contact</li>
-            </ul>
-        </div>
+  <nav class="navigation-bar list">
+    <ul>
+      <li id="logo"><img height="64px" src="../assets/logo-stripes.svg" /></li>
+      <li><RouterLink to="/">Home</RouterLink></li>
+      <li><RouterLink to="/Gallery">Gallery</RouterLink></li>
+      <li><RouterLink to="/Photography">Photography</RouterLink></li>
+      <li><RouterLink to="/Design">Design</RouterLink></li>
+      <li><RouterLink to="/About">Resume</RouterLink></li>
+      <li><RouterLink to="/Contact">Contact</RouterLink></li>
+    </ul>
 
-        <div class="social-media"></div>
+    <div class="social-media"></div>
 
-        <div class="bar"></div>
-
-    </div>
+    <div class="bar"></div>
+  </nav>
 </template>
 
 <style scoped>
-    .navigation-bar {
-        /* background-color: #FF5B5B; */
-        position: fixed;
-        top: 0;
-        left: 30px;
-        bottom: 0;
-        overflow: auto; 
-        padding-right: 70px; 
-        display: flex;
-        flex-direction: column;
-    }
+a {
+  text-decoration: none;
+  color: black;
+}
 
-    .list {
-        font-family: 'Spline Sans Mono', Helvetica, sans-serif;
-        padding-top: 50px;
-        padding-left: 20px;
+a:hover {
+  text-decoration: underline;
+}
 
-    }
+a.router-link-exact-active {
+  text-decoration: underline;
+}
 
-    .list li {
-        list-style: none;
-        padding-bottom: 40px;
-    }
+.navigation-bar {
+  /* background-color: #FF5B5B; */
+  position: fixed;
+  top: 0;
+  left: 30px;
+  bottom: 0;
+  overflow: auto;
+  padding-right: 70px;
+  display: flex;
+  flex-direction: column;
+}
 
-    #logo:hover {
-        text-decoration: underline;
-        /* text-decoration-color: #FF5B5B; */
-    }
+.list {
+  font-family: 'Spline Sans Mono', Helvetica, sans-serif;
+  padding-top: 50px;
+  padding-left: 20px;
+}
 
-    .bar {
-        height: 502px;
-        position: fixed;
-        left: 240px;
-        width: 1px;
-        margin-top: 220px;
-        background-color: #C5C3C3;
-    }
+.list li {
+  list-style: none;
+  padding-bottom: 40px;
+}
 
-    #logo {
-        padding-bottom: 200px;
-    }
+#logo:hover {
+  text-decoration: underline;
+  /* text-decoration-color: #FF5B5B; */
+}
+
+.bar {
+  height: 502px;
+  position: fixed;
+  left: 240px;
+  width: 1px;
+  margin-top: 220px;
+  background-color: #c5c3c3;
+}
+
+#logo {
+  padding-bottom: 200px;
+}
 </style>

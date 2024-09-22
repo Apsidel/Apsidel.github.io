@@ -1,75 +1,32 @@
 <script setup>
-  import NavigationBar from './components/NavigationBar.vue';
-  import MainTitle from './components/MainTitle.vue';
+import NavigationBar from './components/NavigationBar.vue'
+import MainTitle from './components/MainTitle.vue'
 </script>
 
 <template>
   <div class="wrapper">
     <NavigationBar />
-    <div class="main-content">
-      <MainTitle />      
-      <div class="content-box">
-        <div class="yellow-box"></div>
-        <div class="flex-box">
-          <div class="blue-box"></div>
-          <div class="red-box"></div>
-        </div>
-      </div>
-    </div>
 
+    <div class="main-content">
+      <MainTitle />
+      <RouterView />
+    </div>
   </div>
 </template>
 
 <style scoped>
+.wrapper {
+  display: flex;
+  position: relative;
+  /* background-color: #5B61FF; */
+}
 
-
-  .yellow-box {
-    background-color: #ffec49;
-    border-radius: 0px 500px 0px 0px;
-    height: 493px;
-    width: 1048px;
-  }
-
-  .flex-box {
-    margin-top: 22px;
-  }
-
-  .blue-box {
-    background-color: #5a61ff;
-    border-radius: 0px 150px 0px 0px;
-    height: 240px;
-    width: 517px;
-    margin-right: 14px;
-    display: inline-block;
-  }
-
-  .red-box {
-    background-color: #ff5a5a;
-    border-radius: 0px 0px 0px 150px;
-    height: 240px;
-    width: 517px;
-    display: inline-block;
-  }
-
-  .wrapper {
-    display: flex;
-    position: relative;
-    /* background-color: #5B61FF; */
-  }
-
-  .main-content {
-    font-family: 'Staatliches', Helvetica, sans-serif;
-    /* flex: auto; */
-    margin-left: 230px;
-    /* background-color: aqua; */
-    height: 100%;
-    width: max-content;
-  }
-
-  .content-box {
-    background-color: #272626;
-    width: 1070px;
-    height: 755px;
-    margin-right: 60px;
-  }
+.main-content {
+  font-family: 'Staatliches', Helvetica, sans-serif;
+  /* flex: auto; */
+  margin-left: 230px;
+  /* background-color: aqua; */
+  height: 100%;
+  width: max-content;
+}
 </style>
