@@ -3,11 +3,11 @@
     <ul>
       <li id="logo"><img height="64px" src="../assets/logo-stripes.svg" /></li>
       <li><RouterLink to="/">Home</RouterLink></li>
-      <li><RouterLink to="/Gallery">Gallery</RouterLink></li>
-      <li><RouterLink to="/Photography">Photography</RouterLink></li>
-      <li><RouterLink to="/Design">Design</RouterLink></li>
-      <li><RouterLink to="/About">Resume</RouterLink></li>
-      <li><RouterLink to="/Contact">Contact</RouterLink></li>
+      <li><RouterLink to="/gallery">Gallery</RouterLink></li>
+      <li><RouterLink to="/photography">Photography</RouterLink></li>
+      <li><RouterLink to="/design">Design</RouterLink></li>
+      <li><RouterLink to="/about">Resume</RouterLink></li>
+      <li><RouterLink to="/contact">Contact</RouterLink></li>
     </ul>
 
     <div class="social-media"></div>

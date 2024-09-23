@@ -1,6 +1,7 @@
 <script setup>
 import NavigationBar from './components/NavigationBar.vue'
 import MainTitle from './components/MainTitle.vue'
+import data from './gallery/gallery-data.json'
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import MainTitle from './components/MainTitle.vue'
 
     <div class="main-content">
       <MainTitle />
-      <RouterView />
+      <RouterView :data="data.images" />
     </div>
   </div>
 </template>
@@ -18,14 +19,11 @@ import MainTitle from './components/MainTitle.vue'
 .wrapper {
   display: flex;
   position: relative;
-  /* background-color: #5B61FF; */
 }
 
 .main-content {
   font-family: 'Staatliches', Helvetica, sans-serif;
-  /* flex: auto; */
   margin-left: 230px;
-  /* background-color: aqua; */
   height: 100%;
   width: max-content;
 }

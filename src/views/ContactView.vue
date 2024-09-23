@@ -3,4 +3,4 @@ defineOptions({
   inheritAttrs: false
 })
 </script>
-<template>About Page</template>
+<template>Contact</template>
