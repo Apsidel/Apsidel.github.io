@@ -1,3 +1,6 @@
+<script setup>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+</script>
 <template>
   <nav class="navigation-bar list">
     <ul>
@@ -10,8 +13,15 @@
       <li><RouterLink to="/contact">Contact</RouterLink></li>
     </ul>
 
-    <div class="social-media"></div>
-
+    <div id="icon-container">
+      <FontAwesomeIcon class="social-media" icon="fa-solid fa-envelope" />
+      <a href="https://github.com/Apsidel"
+        ><FontAwesomeIcon class="social-media" icon="fa-brands fa-github"
+      /></a>
+      <a href="https://www.linkedin.com/in/kent-soledispa-a9b60b227/"
+        ><FontAwesomeIcon class="social-media" icon="fa-brands fa-linkedin"
+      /></a>
+    </div>
     <div class="bar"></div>
   </nav>
 </template>
@@ -53,15 +63,21 @@ a.router-link-exact-active {
   padding-bottom: 40px;
 }
 
-#logo:hover {
-  text-decoration: underline;
-  /* text-decoration-color: #FF5B5B; */
+#icon-container {
+  padding-left: 25px;
+}
+
+.social-media {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  height: 1.6rem;
 }
 
 .bar {
   height: 502px;
   position: fixed;
-  left: 240px;
+  left: 250px;
   width: 1px;
   margin-top: 220px;
   background-color: #c5c3c3;

@@ -1,9 +1,9 @@
 <script setup>
 import GalleryItem from '@/components/GalleryItem.vue'
 const props = defineProps({
-  data: { 
-    type: Array, 
-    required: true 
+  data: {
+    type: Array,
+    required: true
   },
   id: {
     type: String,
