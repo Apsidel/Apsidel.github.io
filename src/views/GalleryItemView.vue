@@ -23,5 +23,5 @@ console.log(image)
     :url="image.url"
     :title="image.title"
     :description="image.description"
-  ></GalleryItem>
+  />
 </template>

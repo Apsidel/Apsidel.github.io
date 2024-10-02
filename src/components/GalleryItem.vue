@@ -19,7 +19,7 @@ const props = defineProps({
 })
 </script>
 <template>
-  <img :src="url"/>
+  <img :src="'../../src/assets/images/' + url" :alt="title"/>
   <h1>{{ props.title }} {{ props.id }}</h1>
   <body>{{ props.description }}</body>
 </template>

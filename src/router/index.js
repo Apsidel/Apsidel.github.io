@@ -16,15 +16,19 @@ const router = createRouter({
     },
     {
       path: '/gallery',
-      name: 'gallery',
-      component: GalleryView,
-      props: true
-    },
-    {
-      path: '/gallery/:id',
-      name: 'gallery_item',
-      component: GalleryItemView,
-      props: true
+      children: [
+        {
+          path: '',
+          component: GalleryView,
+          props: true
+        },
+        {
+          path: 'view/:id',
+          name: 'gallery_item',
+          component: GalleryItemView,
+          props: true
+        },
+      ]
     },
     {
       path: '/about',
