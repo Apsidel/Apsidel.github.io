@@ -5,26 +5,36 @@ import data from './gallery/gallery-data.json'
 </script>
 
 <template>
-  <div class="wrapper">
-    <NavigationBar />
-
-    <div class="main-content">
-      <MainTitle />
+  <body>
+    <header><MainTitle /></header>
+    <nav><NavigationBar /></nav>
+    <section>
       <RouterView :data="data.images" />
-    </div>
-  </div>
+    </section>
+  </body>
 </template>
 
 <style scoped>
-.wrapper {
-  display: flex;
-  position: relative;
+body {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-areas:
+    'nav  header'
+    'nav  content';
 }
 
-.main-content {
-  font-family: 'Staatliches', Helvetica, sans-serif;
-  margin-left: 230px;
-  height: 100%;
-  width: max-content;
+body > header {
+  grid-area: header;
+}
+
+body > nav {
+  grid-area: nav;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+body > section {
+  grid-area: content;
 }
 </style>

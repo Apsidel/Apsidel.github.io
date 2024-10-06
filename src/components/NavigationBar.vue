@@ -2,34 +2,39 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 </script>
 <template>
-  <nav class="navigation-bar list">
+  <body>
     <ul>
-      <li id="logo"><img height="64px" src="../assets/logo-stripes.svg" /></li>
+      <li id="logo">
+        <RouterLink to="/"><img src="./../assets/logo-stripes.svg" /></RouterLink>
+      </li>
       <li><RouterLink to="/">Home</RouterLink></li>
-      <li><RouterLink to="/gallery">Gallery</RouterLink></li>
-      <li><RouterLink to="/photography">Photography</RouterLink></li>
       <li><RouterLink to="/design">Design</RouterLink></li>
-      <li><RouterLink to="/about">Resume</RouterLink></li>
+      <li><RouterLink to="/gallery">Illustrations</RouterLink></li>
+      <li><RouterLink to="/photography">Photography</RouterLink></li>
+      <li><RouterLink to="/about">About</RouterLink></li>
       <li><RouterLink to="/contact">Contact</RouterLink></li>
+      <li class="social-media">
+        <a href="mailto:kent.soledispa@richmond.edu">
+          <FontAwesomeIcon icon="fa-solid fa-envelope" />
+        </a>
+      </li>
+      <li class="social-media">
+        <a href="https://github.com/Apsidel"><FontAwesomeIcon icon="fa-brands fa-github" /></a>
+      </li>
+      <li class="social-media">
+        <a href="https://www.linkedin.com/in/kent-soledispa-a9b60b227/">
+          <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+        </a>
+      </li>
     </ul>
-
-    <div id="icon-container">
-      <FontAwesomeIcon class="social-media" icon="fa-solid fa-envelope" />
-      <a href="https://github.com/Apsidel"
-        ><FontAwesomeIcon class="social-media" icon="fa-brands fa-github"
-      /></a>
-      <a href="https://www.linkedin.com/in/kent-soledispa-a9b60b227/"
-        ><FontAwesomeIcon class="social-media" icon="fa-brands fa-linkedin"
-      /></a>
-    </div>
-    <div class="bar"></div>
-  </nav>
+    <div id="bar"></div>
+  </body>
 </template>
 
 <style scoped>
 a {
   text-decoration: none;
-  color: black;
+  color: #272626;
 }
 
 a:hover {
@@ -40,50 +45,45 @@ a.router-link-exact-active {
   text-decoration: underline;
 }
 
-.navigation-bar {
-  /* background-color: #FF5B5B; */
-  position: fixed;
-  top: 0;
-  left: 30px;
-  bottom: 0;
-  overflow: auto;
-  padding-right: 70px;
-  display: flex;
-  flex-direction: column;
+body {
+  display: grid;
+  column-count: 2;
+  column-gap: 2.4em;
+  margin-top: 3.6em;
+  margin-left: 1em;
 }
 
-.list {
+ul {
+  grid-column: 1;
   font-family: 'Spline Sans Mono', Helvetica, sans-serif;
-  padding-top: 50px;
-  padding-left: 20px;
+  color: #272626;
 }
 
-.list li {
+ul li {
   list-style: none;
-  padding-bottom: 40px;
-}
-
-#icon-container {
-  padding-left: 25px;
+  padding-bottom: 2.5em;
 }
 
 .social-media {
   display: inline-block;
-  text-align: center;
-  padding: 5px;
-  height: 1.6rem;
+  padding-right: 10px;
+  height: 1.8rem;
+  font-size: 1.8rem;
 }
 
-.bar {
+#bar {
+  grid-column: 2;
   height: 502px;
-  position: fixed;
-  left: 250px;
-  width: 1px;
-  margin-top: 220px;
+  width: 1.2px;
+  margin-top: 10em;
   background-color: #c5c3c3;
 }
 
 #logo {
-  padding-bottom: 200px;
+  padding-bottom: 10em;
+}
+
+#logo img {
+  height: 64px;
 }
 </style>
