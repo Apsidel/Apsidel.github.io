@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue';
-import GalleryView from '@/views/GalleryView.vue';
+import IllustrationsView from '@/views/IllustrationsView.vue';
 import ContactView from '@/views/ContactView.vue';
-import DesignVue from '@/views/DesignVue.vue';
+import DesignView from '@/views/DesignView.vue';
 import PhotographyView from '@/views/PhotographyView.vue';
 import GalleryItemView from '@/views/GalleryItemView.vue';
 
@@ -15,11 +15,11 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/gallery',
+      path: '/illustrations',
       children: [
         {
           path: '',
-          component: GalleryView,
+          component: IllustrationsView,
           props: true
         },
         {
@@ -27,7 +27,7 @@ const router = createRouter({
           name: 'gallery_item',
           component: GalleryItemView,
           props: true
-        },
+        }
       ]
     },
     {
@@ -46,12 +46,23 @@ const router = createRouter({
     {
       path: '/design',
       name: 'design',
-      component: DesignVue
+      component: DesignView
     },
     {
       path: '/photography',
-      name: 'photography',
-      component: PhotographyView
+      children: [
+        {
+          path: '',
+          component: PhotographyView,
+          props: true
+        },
+        {
+          path: 'view/:id',
+          name: 'photo_item',
+          component: GalleryItemView,
+          props: true
+        }
+      ]
     },
   ]
 })

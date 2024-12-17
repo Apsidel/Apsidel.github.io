@@ -7,5 +7,5 @@ const props = defineProps({
 console.log(props.data);
 </script>
 <template>
-  <GalleryGrid :data="data" :routeName="'photo_item'"/>
+  <GalleryGrid :data="data" :routeName="'gallery_item'"/>
 </template>

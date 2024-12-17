@@ -25,6 +25,10 @@ body {
 
 body > header {
   grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: rgb(255, 255, 255, 0.8);
 }
 
 body > nav {
@@ -36,5 +40,6 @@ body > nav {
 
 body > section {
   grid-area: content;
+  min-height: 750px;
 }
 </style>

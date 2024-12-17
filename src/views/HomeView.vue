@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .yellow-box {
   background-color: #ffec49;
   border-radius: 0px 500px 0px 0px;

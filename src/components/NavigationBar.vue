@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       </li>
       <li><RouterLink to="/">Home</RouterLink></li>
       <li><RouterLink to="/design">Design</RouterLink></li>
-      <li><RouterLink to="/gallery">Illustrations</RouterLink></li>
+      <li><RouterLink to="/illustrations">Illustrations</RouterLink></li>
       <li><RouterLink to="/photography">Photography</RouterLink></li>
       <li><RouterLink to="/about">About</RouterLink></li>
       <li><RouterLink to="/contact">Contact</RouterLink></li>
