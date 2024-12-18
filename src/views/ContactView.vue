@@ -1,6 +1,2 @@
-<script setup>
-defineOptions({
-  inheritAttrs: false
-})
-</script>
+<script setup></script>
 <template>Contact</template>

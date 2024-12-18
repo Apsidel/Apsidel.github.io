@@ -1,7 +1,6 @@
 <script setup>
 import NavigationBar from './components/NavigationBar.vue'
 import MainTitle from './components/MainTitle.vue'
-import data from './gallery/gallery-data.json'
 </script>
 
 <template>
@@ -9,7 +8,7 @@ import data from './gallery/gallery-data.json'
     <header><MainTitle /></header>
     <nav><NavigationBar /></nav>
     <section>
-      <RouterView :data="data.images" />
+      <RouterView />
     </section>
   </body>
 </template>

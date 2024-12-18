@@ -3,14 +3,14 @@ const props = defineProps({
   data: Array,
   routeName: String
 })
-console.log(props.data);
+console.log(props.data)
 </script>
 
 <template>
   <section id="grid">
     <div id="container" v-for="image in data" :key="image.id">
       <RouterLink :to="{ name: routeName, params: { id: image.id }, props: { id: image.id } }">
-        <img :src="'./src/assets/images/' + image.url" :alt="image.title"/>
+        <img :src="'./src/assets/images/' + image.url" :alt="image.title" />
         <div id="overlay">{{ image.title }}</div>
       </RouterLink>
     </div>
@@ -50,7 +50,7 @@ console.log(props.data);
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: rgb(0, 0, 0, 0.8);
   color: white;
   text-align: center;

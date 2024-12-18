@@ -19,10 +19,11 @@ const props = defineProps({
 })
 </script>
 <template>
-  <section id="image_container"><img :src="'../../src/assets/images/' + url" :alt="title"/></section>
+  <section id="image_container">
+    <img :src="'../../src/assets/images/' + url" :alt="title" />
+  </section>
   <section id="text_container">
     <h1>{{ props.title }} {{ props.id }}</h1>
-
     <canvas id="color_palette"></canvas>
     <div>{{ props.description }}</div>
   </section>
@@ -48,11 +49,9 @@ section {
   max-width: 350px;
   padding-left: 20px;
   line-height: 2.6em;
-  /* background-color: red; */
 }
 
 h1 {
   font-size: 3em;
-  /* writing-mode: vertical-lr; */  
 }
 </style>

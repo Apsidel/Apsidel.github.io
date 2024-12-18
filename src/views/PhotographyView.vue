@@ -1,11 +1,7 @@
 <script setup>
-import GalleryGrid from '../components/GalleryGrid.vue';
-
-const props = defineProps({
-  data: Array
-})
-console.log(props.data);
+import GalleryGrid from '../components/GalleryGrid.vue'
+import photos from '../assets/galleries/photography-data.json'
 </script>
 <template>
-  <GalleryGrid :data="data" :routeName="'photo_item'"/>
+  <GalleryGrid :data="photos.images" :routeName="'photo_item'" />
 </template>

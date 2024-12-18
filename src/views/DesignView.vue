@@ -1,7 +1,2 @@
-<script setup>
-const props = defineProps({
-  data: Array
-})
-console.log(props.data);
-</script>
+<script setup></script>
 <template>Design</template>

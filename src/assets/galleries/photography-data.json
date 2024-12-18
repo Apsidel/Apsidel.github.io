@@ -1,0 +1,117 @@
+{
+    "images": [
+      {
+        "id": "1",
+        "url": "IMG_2607.jpg",
+        "title": "Sunset over the mountains",
+        "description": "A beautiful sunset casting orange and pink hues over the mountain range.",
+        "metadata": {
+          "resolution": "1920x1080",
+          "size": "2MB",
+          "format": "JPEG",
+          "uploaded_by": "John Doe",
+          "date_uploaded": "2023-08-15"
+        },
+        "tags": ["sunset", "mountains", "nature", "landscape"]
+      },
+      {
+        "id": "2",
+        "url": "IMG_3018.jpg",
+        "title": "City skyline at night",
+        "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+        "metadata": {
+          "resolution": "1080x1350",
+          "size": "1.5MB",
+          "format": "PNG",
+          "uploaded_by": "Jane Smith",
+          "date_uploaded": "2023-09-01"
+        },
+        "tags": ["city", "night", "skyline", "urban"]
+      },
+      {
+        "id": "3",
+        "url": "IMG_2613.jpg",
+        "title": "City skyline at night",
+        "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+        "metadata": {
+          "resolution": "1080x1350",
+          "size": "1.5MB",
+          "format": "PNG",
+          "uploaded_by": "Jane Smith",
+          "date_uploaded": "2023-09-01"
+        },
+        "tags": ["city", "night", "skyline", "urban"]
+      },
+      {
+        "id": "4",
+        "url": "IMG_2613.jpg",
+        "title": "City skyline at night",
+        "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+        "metadata": {
+          "resolution": "1080x1350",
+          "size": "1.5MB",
+          "format": "PNG",
+          "uploaded_by": "Jane Smith",
+          "date_uploaded": "2023-09-01"
+        },
+        "tags": ["city", "night", "skyline", "urban"]
+      },
+      {
+        "id": "5",
+        "url": "IMG_2613.jpg",
+        "title": "City skyline at night",
+        "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+        "metadata": {
+          "resolution": "1080x1350",
+          "size": "1.5MB",
+          "format": "PNG",
+          "uploaded_by": "Jane Smith",
+          "date_uploaded": "2023-09-01"
+        },
+        "tags": ["city", "night", "skyline", "urban"]
+      },
+      {
+        "id": "6",
+        "url": "IMG_2613.jpg",
+        "title": "City skyline at night",
+        "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+        "metadata": {
+          "resolution": "1080x1350",
+          "size": "1.5MB",
+          "format": "PNG",
+          "uploaded_by": "Jane Smith",
+          "date_uploaded": "2023-09-01"
+        },
+        "tags": ["city", "night", "skyline", "urban"]
+      },
+      {
+        "id": "7",
+        "url": "IMG_2613.jpg",
+        "title": "City skyline at night",
+        "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+        "metadata": {
+          "resolution": "1080x1350",
+          "size": "1.5MB",
+          "format": "PNG",
+          "uploaded_by": "Jane Smith",
+          "date_uploaded": "2023-09-01"
+        },
+        "tags": ["city", "night", "skyline", "urban"]
+      },     
+      {
+        "id": "8",
+        "url": "IMG_2622.jpg",
+        "title": "City skyline at night",
+        "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+        "metadata": {
+          "resolution": "1080x1350",
+          "size": "1.5MB",
+          "format": "PNG",
+          "uploaded_by": "Jane Smith",
+          "date_uploaded": "2023-09-01"
+        },
+        "tags": ["city", "night", "skyline", "urban"]
+      }
+    ]
+  }
+  

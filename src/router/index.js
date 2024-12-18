@@ -20,11 +20,10 @@ const router = createRouter({
         {
           path: '',
           component: IllustrationsView,
-          props: true
         },
         {
           path: 'view/:id',
-          name: 'gallery_item',
+          name: 'illustration_item',
           component: GalleryItemView,
           props: true
         }
@@ -54,7 +53,6 @@ const router = createRouter({
         {
           path: '',
           component: PhotographyView,
-          props: true
         },
         {
           path: 'view/:id',
