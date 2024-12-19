@@ -21,11 +21,11 @@ console.log(props.data)
   /* Prevent vertical gaps */
   line-height: 0;
 
-  -webkit-column-count: 2;
+  -webkit-column-count: 3;
   -webkit-column-gap: 3px;
-  -moz-column-count: 2;
+  -moz-column-count: 3;
   -moz-column-gap: 3px;
-  column-count: 2;
+  column-count: 3;
   column-gap: 3px;
 }
 
