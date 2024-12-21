@@ -1,5 +1,5 @@
 <script setup>
-import illustrations from '../assets/galleries/illustrations-data.json'
+import photography from '../assets/galleries/photography-data.json'
 import { ref } from 'vue'
 
 const props = defineProps({
@@ -10,7 +10,7 @@ const props = defineProps({
 })
 
 const index = parseInt(props.id) - 1
-const image = illustrations.images[index]
+const image = photography.images[index]
 
 const colors = ref([
   '#D6BD92',
