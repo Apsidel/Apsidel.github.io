@@ -1,7 +1,8 @@
 <script setup>
 const props = defineProps({
   data: Array,
-  routeName: String
+  routeName: String,
+  columns: Number
 })
 console.log(props.data)
 </script>
@@ -21,11 +22,11 @@ console.log(props.data)
   /* Prevent vertical gaps */
   line-height: 0;
 
-  -webkit-column-count: 3;
+  -webkit-column-count: v-bind(columns);
   -webkit-column-gap: 3px;
-  -moz-column-count: 3;
+  -moz-column-count: v-bind(columns);
   -moz-column-gap: 3px;
-  column-count: 3;
+  column-count: v-bind(columns);
   column-gap: 3px;
 }
 
@@ -54,7 +55,9 @@ console.log(props.data)
   background-color: rgb(0, 0, 0, 0.8);
   color: white;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.25em;
+  line-height: 1em;
+  padding-inline: 2.4em;
   display: flex;
   align-items: center;
   justify-content: center;
