@@ -1,11 +1,16 @@
 <script setup>
+import illustrations from '../assets/galleries/illustrations-data.json'
 import { ref } from 'vue'
+
 const props = defineProps({
-  image: {
-    type: Object,
+  id: {
+    type: String,
     required: true
   }
 })
+
+const index = parseInt(props.id) - 1
+const image = illustrations.images[index]
 
 const colors = ref([
   '#D6BD92',
@@ -19,13 +24,16 @@ const colors = ref([
   '#810409',
   '#241409'
 ])
+
+// Debugging
+console.log(image)
 </script>
 <template>
   <section id="image_container">
     <img :src="'../../src/assets/images/' + image.url" :alt="image.title" />
   </section>
   <section id="text_container">
-    <h1>{{ props.image.title }}</h1>
+    <h1>{{ image.title }}</h1>
     <ul>
       <li
         id="color-square"
@@ -34,10 +42,9 @@ const colors = ref([
         :style="'background-color:' + color"
       ></li>
     </ul>
-    <div id="description">{{ props.image.description }}</div>
+    <div id="description">{{ image.description }}</div>
   </section>
 </template>
-
 <style scoped>
 img {
   width: auto;

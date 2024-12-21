@@ -5,6 +5,7 @@ import ContactView from '@/views/ContactView.vue';
 import DesignView from '@/views/DesignView.vue';
 import PhotographyView from '@/views/PhotographyView.vue';
 import GalleryItemView from '@/views/GalleryItemView.vue';
+import PhotoItemView from '@/views/PhotoItemView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -57,7 +58,7 @@ const router = createRouter({
         {
           path: 'view/:id',
           name: 'photo_item',
-          component: GalleryItemView,
+          component: PhotoItemView,
           props: true
         }
       ]
