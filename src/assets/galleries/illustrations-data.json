@@ -2,8 +2,8 @@
     "images": [
       {
         "id": "1",
-        "url": "IMG_2607.jpg",
-        "title": "Sunset over the mountains",
+        "url": "blue_sky-100.jpg",
+        "title": "Sunset over the mountains |  Winter Magazine Cover",
         "description": "A beautiful sunset casting orange and pink hues over the mountain range.",
         "metadata": {
           "resolution": "1920x1080",
@@ -16,8 +16,8 @@
       },
       {
         "id": "2",
-        "url": "IMG_3018.jpg",
-        "title": "City skyline at night",
+        "url": "Oso_200.jpg",
+        "title": "Happy 26th Birthday Card Cover",
         "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
         "metadata": {
           "resolution": "1080x1350",
@@ -30,8 +30,8 @@
       },
       {
         "id": "3",
-        "url": "IMG_2613.jpg",
-        "title": "City skyline at night",
+        "url": "Hanfu_Event-30.jpg",
+        "title": "Hanfu Fashion Exhibition Event Poster",
         "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
         "metadata": {
           "resolution": "1080x1350",
@@ -44,8 +44,8 @@
       },
       {
         "id": "4",
-        "url": "IMG_2613.jpg",
-        "title": "City skyline at night",
+        "url": "Bauhaus-50.jpg",
+        "title": "Bauhaus Typeface Poster",
         "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
         "metadata": {
           "resolution": "1080x1350",
@@ -58,8 +58,8 @@
       },
       {
         "id": "5",
-        "url": "IMG_2613.jpg",
-        "title": "City skyline at night",
+        "url": "Beekman1802_Ad-25.jpg",
+        "title": "Beekman 1802 Potato Peel Cream Magazine Ad",
         "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
         "metadata": {
           "resolution": "1080x1350",
@@ -72,8 +72,8 @@
       },
       {
         "id": "6",
-        "url": "IMG_2613.jpg",
-        "title": "City skyline at night",
+        "url": "Elixir_Strings_Ad-27.png",
+        "title": "Elixir Guitar Strings Magazine Ad",
         "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
         "metadata": {
           "resolution": "1080x1350",
@@ -86,8 +86,8 @@
       },
       {
         "id": "7",
-        "url": "IMG_2613.jpg",
-        "title": "City skyline at night",
+        "url": "Floret_Garden_Poster-30.jpg",
+        "title": "Floret Garden Poster",
         "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
         "metadata": {
           "resolution": "1080x1350",
@@ -100,8 +100,36 @@
       },     
       {
         "id": "8",
-        "url": "IMG_2622.jpg",
-        "title": "City skyline at night",
+        "url": "Fish_Dress_Donations-80.jpg",
+        "title": "FISH Dress Donation Ad Campaign Poster",
+        "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+        "metadata": {
+          "resolution": "1080x1350",
+          "size": "1.5MB",
+          "format": "PNG",
+          "uploaded_by": "Jane Smith",
+          "date_uploaded": "2023-09-01"
+        },
+        "tags": ["city", "night", "skyline", "urban"]
+      },
+      {
+        "id": "9",
+        "url": "Bouldering_Postcard-50.jpg",
+        "title": "LATITUDE Postcard",
+        "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+        "metadata": {
+          "resolution": "1080x1350",
+          "size": "1.5MB",
+          "format": "PNG",
+          "uploaded_by": "Jane Smith",
+          "date_uploaded": "2023-09-01"
+        },
+        "tags": ["city", "night", "skyline", "urban"]
+      },
+      {
+        "id": "10",
+        "url": "TIME_Magazine_Mock-30.jpg",
+        "title": "TIME Magazine Money Laundering Mock Cover",
         "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
         "metadata": {
           "resolution": "1080x1350",

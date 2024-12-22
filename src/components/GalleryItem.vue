@@ -1,24 +1,10 @@
 <script setup>
-import { ref } from 'vue'
 const props = defineProps({
   image: {
     type: Object,
     required: true
   }
 })
-
-const colors = ref([
-  '#D6BD92',
-  '#B96B55',
-  '#C25F21',
-  '#695618',
-  '#DB1222',
-  '#B70410',
-  '#811018',
-  '#2C1E19',
-  '#810409',
-  '#241409'
-])
 </script>
 <template>
   <section id="image_container">
@@ -29,7 +15,7 @@ const colors = ref([
     <ul>
       <li
         id="color-square"
-        v-for="color in colors"
+        v-for="color in image.colors"
         :key="color"
         :style="'background-color:' + color"
       ></li>
