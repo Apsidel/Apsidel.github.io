@@ -1,6 +1,5 @@
 <script setup>
 import photography from '../assets/galleries/photography-data.json'
-import { ref } from 'vue'
 
 const props = defineProps({
   id: {
@@ -11,19 +10,6 @@ const props = defineProps({
 
 const index = parseInt(props.id) - 1
 const image = photography.images[index]
-
-const colors = ref([
-  '#D6BD92',
-  '#B96B55',
-  '#C25F21',
-  '#695618',
-  '#DB1222',
-  '#B70410',
-  '#811018',
-  '#2C1E19',
-  '#810409',
-  '#241409'
-])
 
 // Debugging
 console.log(image)
@@ -37,7 +23,7 @@ console.log(image)
     <ul>
       <li
         id="color-square"
-        v-for="color in colors"
+        v-for="color in image.colors.slice(0, 14)"
         :key="color"
         :style="'background-color:' + color"
       ></li>
