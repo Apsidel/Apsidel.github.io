@@ -1,0 +1,277 @@
+{
+  "images": [
+    {
+      "id": "1",
+      "url": "blue_sky-100.jpg",
+      "title": "Sunset over the mountains |  Winter Magazine Cover",
+      "description": "A beautiful sunset casting orange and pink hues over the mountain range.",
+      "colors": [
+        "#FFFFFF",
+        "#F9C9A8",
+        "#F67D3B",
+        "#F36A3B",
+        "#4A74AF",
+        "#4274B9",
+        "#6D6E71",
+        "#3A3F46",
+        "#161617",
+        "#000000"
+      ],
+      "metadata": {
+        "resolution": "1920x1080",
+        "size": "2MB",
+        "format": "JPEG",
+        "uploaded_by": "John Doe",
+        "date_uploaded": "2023-08-15"
+      },
+      "tags": ["sunset", "mountains", "nature", "landscape"]
+    },
+    {
+      "id": "2",
+      "url": "Oso_200.jpg",
+      "title": "Happy 26th Birthday Card Cover",
+      "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+      "colors": [
+        "#FFFEFE",
+        "#F2EFEB",
+        "#FDB44C",
+        "#FCB040",
+        "#FCB03E",
+        "#B5A398",
+        "#D0A05D",
+        "#87705F",
+        "#6D5545",
+        "#503628",
+        "#2C1C18",
+        "#150E0F"
+      ],
+      "metadata": {
+        "resolution": "1080x1350",
+        "size": "1.5MB",
+        "format": "PNG",
+        "uploaded_by": "Jane Smith",
+        "date_uploaded": "2023-09-01"
+      },
+      "tags": ["city", "night", "skyline", "urban"]
+    },
+    {
+      "id": "3",
+      "url": "Hanfu_Event-30.jpg",
+      "title": "Hanfu Fashion Exhibition Event Poster",
+      "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+      "colors": [
+        "#FFFEFD",
+        "#FDECE2",
+        "#FFDDC7",
+        "#EBD7CD",
+        "#FEC7A9",
+        "#EFC3A4",
+        "#EDB39A",
+        "#CD9580",
+        "#271511",
+        "#210600",
+        "#1F0500",
+        "#1D0500",
+        "#030000",
+        "#000000"
+      ],
+      "metadata": {
+        "resolution": "1080x1350",
+        "size": "1.5MB",
+        "format": "PNG",
+        "uploaded_by": "Jane Smith",
+        "date_uploaded": "2023-09-01"
+      },
+      "tags": ["city", "night", "skyline", "urban"]
+    },
+    {
+      "id": "4",
+      "url": "Bauhaus-50.jpg",
+      "title": "Bauhaus Typeface Poster",
+      "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+      "colors": ["#FBFCFC", "#F7F6F0", "#FFF100", "#BDB8B6", "#5E5931", "#D02528", "#35363A"],
+      "metadata": {
+        "resolution": "1080x1350",
+        "size": "1.5MB",
+        "format": "PNG",
+        "uploaded_by": "Jane Smith",
+        "date_uploaded": "2023-09-01"
+      },
+      "tags": ["city", "night", "skyline", "urban"]
+    },
+    {
+      "id": "5",
+      "url": "Beekman1802_Ad-25.jpg",
+      "title": "Beekman 1802 Potato Peel Cream Magazine Ad",
+      "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+      "colors": [
+        "#E1CDB7",
+        "#D9AE2E",
+        "#D5AC34",
+        "#D7AC29",
+        "#D4AC2F",
+        "#D4A927",
+        "#D1A727",
+        "#CEA525",
+        "#C79C22",
+        "#C79935",
+        "#C09416",
+        "#BB8E16",
+        "#B48A18",
+        "#B3880F",
+        "#997541",
+        "#613A02"
+      ],
+      "metadata": {
+        "resolution": "1080x1350",
+        "size": "1.5MB",
+        "format": "PNG",
+        "uploaded_by": "Jane Smith",
+        "date_uploaded": "2023-09-01"
+      },
+      "tags": ["city", "night", "skyline", "urban"]
+    },
+    {
+      "id": "6",
+      "url": "Elixir_Strings_Ad-27.png",
+      "title": "Elixir Guitar Strings Magazine Ad",
+      "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+      "colors": [
+        "#FFFFFF",
+        "#FEFFFE",
+        "#BC8FB5",
+        "#8C3C6D",
+        "#5F3B54",
+        "#7F257A",
+        "#802479",
+        "#802478",
+        "#81237A",
+        "#721F6C",
+        "#392315",
+        "#27130A",
+        "#101012",
+        "#0C0809"
+      ],
+      "metadata": {
+        "resolution": "1080x1350",
+        "size": "1.5MB",
+        "format": "PNG",
+        "uploaded_by": "Jane Smith",
+        "date_uploaded": "2023-09-01"
+      },
+      "tags": ["city", "night", "skyline", "urban"]
+    },
+    {
+      "id": "7",
+      "url": "Floret_Garden_Poster-30.jpg",
+      "title": "Floret Garden Poster",
+      "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+      "colors": [
+        "#FFFFFF",
+        "#FDFDFD",
+        "#FFE1F3",
+        "#E4D9CF",
+        "#ACAA8C",
+        "#E3849B",
+        "#6C5EA5",
+        "#584F36",
+        "#1F0F0C"
+      ],
+      "metadata": {
+        "resolution": "1080x1350",
+        "size": "1.5MB",
+        "format": "PNG",
+        "uploaded_by": "Jane Smith",
+        "date_uploaded": "2023-09-01"
+      },
+      "tags": ["city", "night", "skyline", "urban"]
+    },
+    {
+      "id": "8",
+      "url": "Fish_Dress_Donations-80.jpg",
+      "title": "FISH Dress Donation Ad Campaign Poster",
+      "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+      "colors": [
+        "#EBF3F1",
+        "#E7F1EE",
+        "#DFE7E2",
+        "#AB7958",
+        "#597466",
+        "#557163",
+        "#626460",
+        "#52665B",
+        "#4E5750",
+        "#4C534D",
+        "#4B524D"
+      ],
+      "metadata": {
+        "resolution": "1080x1350",
+        "size": "1.5MB",
+        "format": "PNG",
+        "uploaded_by": "Jane Smith",
+        "date_uploaded": "2023-09-01"
+      },
+      "tags": ["city", "night", "skyline", "urban"]
+    },
+    {
+      "id": "9",
+      "url": "Bouldering_Postcard-50.jpg",
+      "title": "LATITUDE Postcard",
+      "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+      "colors": [
+        "#FEFEFE",
+        "#DAD8DD",
+        "#CFCBCF",
+        "#C1BCB7",
+        "#969096",
+        "#647383",
+        "#82624C",
+        "#3E454E",
+        "#203950",
+        "#1F2936",
+        "#1C242D",
+        "#151C28",
+        "#121920",
+        "#12161F",
+        "#12151E",
+        "#0A0F17"
+      ],
+      "metadata": {
+        "resolution": "1080x1350",
+        "size": "1.5MB",
+        "format": "PNG",
+        "uploaded_by": "Jane Smith",
+        "date_uploaded": "2023-09-01"
+      },
+      "tags": ["city", "night", "skyline", "urban"]
+    },
+    {
+      "id": "10",
+      "url": "TIME_Magazine_Mock-30.jpg",
+      "title": "TIME Magazine Money Laundering Mock Cover",
+      "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+      "colors": [
+        "#BCC2C9",
+        "#96A4B7",
+        "#9B9FA4",
+        "#838FA0",
+        "#80696D",
+        "#494A49",
+        "#D00102",
+        "#BE0100",
+        "#B30100",
+        "#120E0B",
+        "#040101",
+        "#000000"
+      ],
+      "metadata": {
+        "resolution": "1080x1350",
+        "size": "1.5MB",
+        "format": "PNG",
+        "uploaded_by": "Jane Smith",
+        "date_uploaded": "2023-09-01"
+      },
+      "tags": ["city", "night", "skyline", "urban"]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 <script setup>
 import GalleryItem from '@/components/GalleryItem.vue'
-import illustrations from '../assets/galleries/illustrations-data.json'
+import illustrations from '../assets/galleries/designs-data.json'
 
 const props = defineProps({
   id: {

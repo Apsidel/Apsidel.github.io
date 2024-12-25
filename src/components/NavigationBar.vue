@@ -8,8 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
         <RouterLink to="/"><img src="./../assets/logo-stripes.svg" /></RouterLink>
       </li>
       <li><RouterLink to="/">Home</RouterLink></li>
-      <li><RouterLink to="/design">Design</RouterLink></li>
-      <li><RouterLink to="/illustrations">Illustrations</RouterLink></li>
+      <li><RouterLink to="/designs">Designs</RouterLink></li>
       <li><RouterLink to="/photography">Photography</RouterLink></li>
       <li><RouterLink to="/about">About</RouterLink></li>
       <li><RouterLink to="/contact">Contact</RouterLink></li>
@@ -57,6 +56,7 @@ ul {
   grid-column: 1;
   font-family: 'Spline Sans Mono', Helvetica, sans-serif;
   color: #272626;
+  min-width: 112px;
 }
 
 ul li {

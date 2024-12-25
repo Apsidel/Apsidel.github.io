@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue';
-import IllustrationsView from '@/views/IllustrationsView.vue';
 import ContactView from '@/views/ContactView.vue';
 import DesignView from '@/views/DesignView.vue';
 import PhotographyView from '@/views/PhotographyView.vue';
@@ -16,21 +15,6 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/illustrations',
-      children: [
-        {
-          path: '',
-          component: IllustrationsView,
-        },
-        {
-          path: 'view/:id',
-          name: 'illustration_item',
-          component: GalleryItemView,
-          props: true
-        }
-      ]
-    },
-    {
       path: '/about',
       name: 'about',
       // route level code-splitting
@@ -44,9 +28,19 @@ const router = createRouter({
       component: ContactView
     },
     {
-      path: '/design',
-      name: 'design',
-      component: DesignView
+      path: '/designs',
+      children: [
+        {
+          path: '',
+          component: DesignView,
+        },
+        {
+          path: 'view/:id',
+          name: 'design_item',
+          component: GalleryItemView,
+          props: true
+        }
+      ]
     },
     {
       path: '/photography',
@@ -62,7 +56,7 @@ const router = createRouter({
           props: true
         }
       ]
-    },
+    }
   ]
 })
 
