@@ -23,14 +23,17 @@
         "#0A0203",
         "#030102"
       ],
-      "metadata": {
-        "resolution": "1920x1080",
-        "size": "2MB",
-        "format": "JPEG",
-        "uploaded_by": "John Doe",
-        "date_uploaded": "2023-08-15"
+      "date_taken": "2024-08-01",
+      "dimensions": [900, 600],
+      "camera_settings": {
+        "camera_maker": "Canon",
+        "camera_model": "EOS Rebel T7",
+        "f-stop": "f/5.6",
+        "exposure": "1/400 sec.",
+        "iso_speed": "3200",
+        "focal_length": "24mm"
       },
-      "tags": ["sunset", "mountains", "nature", "landscape"]
+      "tags": ["aomori", "japan", "nebuta_festival", "lanterns"]
     },
     {
       "id": "2",
@@ -55,14 +58,17 @@
         "#110D0D",
         "#060708"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "date_taken": "2024-08-01",
+      "dimensions": [900, 900],
+      "camera_settings": {
+        "camera_maker": "Canon",
+        "camera_model": "EOS Rebel T7",
+        "f-stop": "f/5.6",
+        "exposure": "1/400 sec.",
+        "iso_speed": "3200",
+        "focal_length": "24mm"
       },
-      "tags": ["city", "night", "skyline", "urban"]
+      "tags": ["aomori", "japan", "nebuta_festival", "lanterns"]
     },
     {
       "id": "3",
@@ -87,14 +93,17 @@
         "#010000",
         "#000000"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "date_taken": "2024-08-01",
+      "dimensions": [900, 600],
+      "camera_settings": {
+        "camera_maker": "Canon",
+        "camera_model": "EOS Rebel T7",
+        "f-stop": "f/5.6",
+        "exposure": "1/640 sec.",
+        "iso_speed": "3200",
+        "focal_length": "18mm"
       },
-      "tags": ["city", "night", "skyline", "urban"]
+      "tags": ["aomori", "japan", "nebuta_festival", "lanterns"]
     },
     {
       "id": "4",
@@ -119,14 +128,17 @@
         "#000000",
         "#000000"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "date_taken": "2024-08-01",
+      "dimensions": [900, 600],
+      "camera_settings": {
+        "camera_maker": "Canon",
+        "camera_model": "EOS Rebel T7",
+        "f-stop": "f/5.6",
+        "exposure": "1/640 sec.",
+        "iso_speed": "3200",
+        "focal_length": "18mm"
       },
-      "tags": ["city", "night", "skyline", "urban"]
+      "tags": ["aomori", "japan", "nebuta_festival", "lanterns"]
     },
     {
       "id": "5",
@@ -151,14 +163,17 @@
         "#0C0002",
         "#040102"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "date_taken": "2024-08-01",
+      "dimensions": [900, 600],
+      "camera_settings": {
+        "camera_maker": "Canon",
+        "camera_model": "EOS Rebel T7",
+        "f-stop": "f/5.6",
+        "exposure": "1/1000 sec.",
+        "iso_speed": "3200",
+        "focal_length": "18mm"
       },
-      "tags": ["city", "night", "skyline", "urban"]
+      "tags": ["aomori", "japan", "nebuta_festival", "lanterns"]
     },
     {
       "id": "6",
@@ -183,14 +198,17 @@
         "#150301",
         "#090202"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "date_taken": "2024-08-01",
+      "dimensions": [900, 600],
+      "camera_settings": {
+        "camera_maker": "Canon",
+        "camera_model": "EOS Rebel T7",
+        "f-stop": "f/5.6",
+        "exposure": "1/2500 sec.",
+        "iso_speed": "3200",
+        "focal_length": "32mm"
       },
-      "tags": ["city", "night", "skyline", "urban"]
+      "tags": ["aomori", "japan", "nebuta_festival", "lanterns"]
     },
     {
       "id": "7",
@@ -215,14 +233,17 @@
         "#060301",
         "#030201"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "date_taken": "2024-08-01",
+      "dimensions": [600, 900],
+      "camera_settings": {
+        "camera_maker": "Canon",
+        "camera_model": "EOS Rebel T7",
+        "f-stop": "f/6.3",
+        "exposure": "1/30 sec.",
+        "iso_speed": "3200",
+        "focal_length": "18mm"
       },
-      "tags": ["city", "night", "skyline", "urban"]
+      "tags": ["aomori", "japan", "telephone", "telephone_booth"]
     },
     {
       "id": "8",
@@ -247,14 +268,17 @@
         "#000000",
         "#000000"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "date_taken": "2024-08-01",
+      "dimensions": [900, 600],
+      "camera_settings": {
+        "camera_maker": "Canon",
+        "camera_model": "EOS Rebel T7",
+        "f-stop": "f/5.6",
+        "exposure": "1/1000 sec.",
+        "iso_speed": "3200",
+        "focal_length": "28mm"
       },
-      "tags": ["city", "night", "skyline", "urban"]
+      "tags": ["aomori", "japan", "nebuta_festival", "lanterns"]
     }
   ]
 }

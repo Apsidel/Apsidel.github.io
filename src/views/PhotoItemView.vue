@@ -1,4 +1,5 @@
 <script setup>
+import CameraSettings from '@/components/CameraSettings.vue'
 import photography from '../assets/galleries/photography-data.json'
 
 const props = defineProps({
@@ -29,6 +30,7 @@ console.log(image)
       ></li>
     </ul>
     <div id="description">{{ image.description }}</div>
+    <CameraSettings :camera_settings="image.camera_settings" />
   </section>
 </template>
 <style scoped>
@@ -61,7 +63,8 @@ section {
   line-height: 1.2em;
   margin-top: 10px;
   padding-top: 10px;
-  /* border-top: 1.5px solid; */
+  padding-bottom: 4em;
+  border-bottom: 1.5px solid;
 }
 
 ul {
