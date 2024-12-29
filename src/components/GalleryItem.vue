@@ -7,24 +7,41 @@ const props = defineProps({
 })
 </script>
 <template>
-  <section id="image_container">
-    <img :src="'../../src/assets/images/' + image.url" :alt="image.title" />
-  </section>
-  <section id="text_container">
-    <h1>{{ props.image.title }}</h1>
-    <ul>
-      <li
-        id="color-square"
-        v-for="color in image.colors"
-        :key="color"
-        :style="'background-color:' + color"
-      ></li>
-    </ul>
-    <div id="description">{{ props.image.description }}</div>
-  </section>
+  <body>
+    <section id="image_container">
+      <img :src="'../../src/assets/images/' + image.url" :alt="image.title" />
+    </section>
+    <section id="info_container"></section>
+    <section id="text_container">
+      <h1>{{ props.image.title }}</h1>
+      <ul>
+        <li
+          id="color-square"
+          v-for="color in image.colors"
+          :key="color"
+          :style="'background-color:' + color"
+        ></li>
+      </ul>
+      <div id="description">{{ props.image.description }}</div>
+    </section>
+  </body>
 </template>
 
 <style scoped>
+body {
+  display: grid;
+  grid-template-columns: 3.2fr 1.6fr 2.2fr;
+  grid-template-areas: 'image info text';
+}
+
+body > #image_container {
+  grid-area: image;
+}
+
+body > #text_container {
+  grid-area: info;
+}
+
 img {
   width: auto;
   max-height: 700px;
@@ -36,11 +53,12 @@ section {
 }
 
 #image_container {
-  text-align: center;
-  width: 900px;
   max-width: 900px;
   height: auto;
-  background-color: black;
+}
+
+#info_container {
+  padding-left: 60px;
 }
 
 #text_container {

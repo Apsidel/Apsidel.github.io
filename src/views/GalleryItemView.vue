@@ -1,6 +1,6 @@
 <script setup>
 import GalleryItem from '@/components/GalleryItem.vue'
-import illustrations from '../assets/galleries/designs-data.json'
+import designs from '../assets/galleries/designs-data.json'
 
 const props = defineProps({
   id: {
@@ -10,7 +10,7 @@ const props = defineProps({
 })
 
 const index = parseInt(props.id) - 1
-const image = illustrations.images[index]
+const image = designs.images[index]
 
 // Debugging
 console.log(image)
