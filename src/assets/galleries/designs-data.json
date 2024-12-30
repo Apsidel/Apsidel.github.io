@@ -3,7 +3,7 @@
     {
       "id": "1",
       "url": "blue_sky-100.jpg",
-      "title": "Sunset over the mountains |  Winter Magazine Cover",
+      "title": "Winter Issue Magazine Cover",
       "description": "A beautiful sunset casting orange and pink hues over the mountain range.",
       "colors": [
         "#FFFFFF",
@@ -17,19 +17,20 @@
         "#161617",
         "#000000"
       ],
-      "metadata": {
-        "resolution": "1920x1080",
-        "size": "2MB",
-        "format": "JPEG",
-        "uploaded_by": "John Doe",
-        "date_uploaded": "2023-08-15"
+      "design_data": {
+        "programs": "Adobe Illustrator",
+        "file_type": "AI",
+        "dimensions": "2250x3000",
+        "resolution": "72dpi",
+        "color_mode": "CMYK",
+        "design_type": "Magazine Cover"
       },
       "tags": ["sunset", "mountains", "nature", "landscape"]
     },
     {
       "id": "2",
       "url": "Oso_200.jpg",
-      "title": "Happy 26th Birthday Card Cover",
+      "title": "Happy 26th Birthday Card",
       "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
       "colors": [
         "#FFFEFE",
@@ -45,12 +46,13 @@
         "#2C1C18",
         "#150E0F"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "design_data": {
+        "programs": "Adobe Illustrator",
+        "file_type": "AI",
+        "dimensions": "2250x3000",
+        "resolution": "72dpi",
+        "color_mode": "CMYK",
+        "design_type": "Birthday Card"
       },
       "tags": ["city", "night", "skyline", "urban"]
     },
@@ -75,12 +77,14 @@
         "#030000",
         "#000000"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "design_data": {
+        "programs": "Adobe Photoshop",
+        "file_type": "TIFF",
+        "dimensions": "2250x3000",
+        "resolution": "72dpi",
+        "color_mode": "CMYK",
+        "design_type": "Poster",
+        "event": "Hanfu Fashion Exhibition"
       },
       "tags": ["city", "night", "skyline", "urban"]
     },
@@ -88,21 +92,22 @@
       "id": "4",
       "url": "Bauhaus-50.jpg",
       "title": "Bauhaus Typeface Poster",
-      "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
+      "description": "The main objective of this project was to become more familiar with some of the history of typography. For my poster, I was tasked with researching the history of the Bauhaus typeface and its creator Herbert Bayer. In creating the poster, I was able to apply my knowledge of the typography and design principles learnt in class. In addition, working on the poster gave me the opportunity to further develop my skills using Adobe Illustrator.",
       "colors": ["#FBFCFC", "#F7F6F0", "#FFF100", "#BDB8B6", "#5E5931", "#D02528", "#35363A"],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "design_data": {
+        "programs": "Adobe Illustrator",
+        "file_type": "AI",
+        "dimensions": "2250x3000",
+        "resolution": "72dpi",
+        "color_mode": "CMYK",
+        "design_type": "Poster"
       },
       "tags": ["city", "night", "skyline", "urban"]
     },
     {
       "id": "5",
       "url": "Beekman1802_Ad-25.jpg",
-      "title": "Beekman 1802 Potato Peel Cream Magazine Ad",
+      "title": "Beekman 1802 Potato Peel Cream Ad",
       "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
       "colors": [
         "#E1CDB7",
@@ -122,19 +127,22 @@
         "#997541",
         "#613A02"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "design_data": {
+        "programs": "Adobe Photoshop",
+        "file_type": "PSD",
+        "dimensions": "2250x3000",
+        "resolution": "72dpi",
+        "color_mode": "CMYK",
+        "design_type": "Magazine Ad",
+        "brand": "Beekman 1802",
+        "product": "Potato Peel"
       },
       "tags": ["city", "night", "skyline", "urban"]
     },
     {
       "id": "6",
       "url": "Elixir_Strings_Ad-27.png",
-      "title": "Elixir Guitar Strings Magazine Ad",
+      "title": "Elixir Guitar Strings Ad",
       "description": "A vibrant city skyline with skyscrapers illuminated against a starry night sky.",
       "colors": [
         "#FFFFFF",
@@ -152,12 +160,15 @@
         "#101012",
         "#0C0809"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "design_data": {
+        "programs": "Adobe Photoshop",
+        "file_type": "PSD",
+        "dimensions": "2550x3300",
+        "resolution": "72dpi",
+        "color_mode": "CMYK",
+        "design_type": "Magazine Ad",
+        "brand": "Elixir Strings",
+        "product": "Acoustic Guitar Strings"
       },
       "tags": ["city", "night", "skyline", "urban"]
     },
@@ -177,12 +188,14 @@
         "#584F36",
         "#1F0F0C"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "design_data": {
+        "programs": "Adobe Photoshop",
+        "file_type": "TIFF",
+        "dimensions": "2250x3000",
+        "resolution": "72dpi",
+        "color_mode": "CMYK",
+        "design_type": "Poster",
+        "event": "Hanfu Fashion Exhibition"
       },
       "tags": ["city", "night", "skyline", "urban"]
     },
@@ -204,12 +217,15 @@
         "#4C534D",
         "#4B524D"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "design_data": {
+        "programs": "Adobe Illustrator",
+        "file_type": "AI",
+        "dimensions": "2250x3000",
+        "resolution": "72dpi",
+        "color_mode": "CMYK",
+        "design_type": "Poster",
+        "brand": "FISH, Inc.",
+        "event": "Dress Donation Campaign"
       },
       "tags": ["city", "night", "skyline", "urban"]
     },
@@ -236,12 +252,14 @@
         "#12151E",
         "#0A0F17"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "design_data": {
+        "programs": "Adobe Photoshop",
+        "file_type": "TIFF",
+        "dimensions": "2250x3000",
+        "resolution": "72dpi",
+        "color_mode": "CMYK",
+        "design_type": "Postcard",
+        "brand": "LATITUDE"
       },
       "tags": ["city", "night", "skyline", "urban"]
     },
@@ -264,12 +282,14 @@
         "#040101",
         "#000000"
       ],
-      "metadata": {
-        "resolution": "1080x1350",
-        "size": "1.5MB",
-        "format": "PNG",
-        "uploaded_by": "Jane Smith",
-        "date_uploaded": "2023-09-01"
+      "design_data": {
+        "programs": "Adobe Photoshop",
+        "file_type": "TIFF",
+        "dimensions": "2250x3000",
+        "resolution": "72dpi",
+        "color_mode": "CMYK",
+        "design_type": "Magazine Cover",
+        "brand": "TIME Magazine"
       },
       "tags": ["city", "night", "skyline", "urban"]
     }
