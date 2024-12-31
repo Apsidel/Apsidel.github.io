@@ -1,2 +1,6 @@
 <script setup></script>
-<template>About Page</template>
+<template>
+  <body>
+    <div>About</div>
+  </body>
+</template>

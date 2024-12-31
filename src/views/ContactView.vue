@@ -1,2 +1,6 @@
 <script setup></script>
-<template>Contact</template>
+<template>
+  <body>
+    <div>Contact</div>
+  </body>
+</template>

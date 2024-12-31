@@ -16,22 +16,24 @@ const image = photography.images[index]
 console.log(image)
 </script>
 <template>
-  <section id="image_container">
-    <img :src="'../../src/assets/images/' + image.url" :alt="image.title" />
-  </section>
-  <section id="text_container">
-    <h1>{{ image.title }}</h1>
-    <ul>
-      <li
-        id="color-square"
-        v-for="color in image.colors.slice(0, 14)"
-        :key="color"
-        :style="'background-color:' + color"
-      ></li>
-    </ul>
-    <div id="description">{{ image.description }}</div>
-    <CameraSettings :camera_settings="image.camera_settings" />
-  </section>
+  <body>
+    <section id="image_container">
+      <img :src="'../../src/assets/images/' + image.url" :alt="image.title" />
+    </section>
+    <section id="text_container">
+      <h1>{{ image.title }}</h1>
+      <ul>
+        <li
+          id="color-square"
+          v-for="color in image.colors.slice(0, 14)"
+          :key="color"
+          :style="'background-color:' + color"
+        ></li>
+      </ul>
+      <div id="description">{{ image.description }}</div>
+      <CameraSettings :camera_settings="image.camera_settings" />
+    </section>
+  </body>
 </template>
 <style scoped>
 img {

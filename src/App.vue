@@ -8,7 +8,11 @@ import MainTitle from './components/MainTitle.vue'
     <header><MainTitle /></header>
     <nav><NavigationBar /></nav>
     <section>
-      <RouterView />
+      <RouterView v-slot="{ Component }">
+        <Transition name="page-opacity" mode="out-in">
+          <component :is="Component" />
+        </Transition>
+      </RouterView>
     </section>
   </body>
 </template>
@@ -40,5 +44,15 @@ body > nav {
 body > section {
   grid-area: content;
   min-height: 750px;
+}
+
+.page-opacity-enter-active,
+.page-opacity-leave-active {
+  transition: 250ms ease all;
+}
+
+.page-opacity-enter-from,
+.page-opacity-leave-to {
+  opacity: 0;
 }
 </style>
