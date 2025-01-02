@@ -1,5 +1,6 @@
 <script setup>
 import CameraSettings from '@/components/CameraSettings.vue'
+import ColorStrip from '@/components/ColorStrip.vue'
 import photography from '../assets/galleries/photography-data.json'
 
 const props = defineProps({
@@ -22,14 +23,7 @@ console.log(image)
     </section>
     <section id="text_container">
       <h1>{{ image.title }}</h1>
-      <ul>
-        <li
-          id="color-square"
-          v-for="color in image.colors.slice(0, 14)"
-          :key="color"
-          :style="'background-color:' + color"
-        ></li>
-      </ul>
+      <ColorStrip :colors="image.colors.slice(0, 14)" :width="'40px'"></ColorStrip>
       <div id="description">{{ image.description }}</div>
       <CameraSettings :camera_settings="image.camera_settings" />
     </section>
@@ -67,17 +61,6 @@ section {
   padding-top: 10px;
   padding-bottom: 4em;
   border-bottom: 1.5px solid;
-}
-
-ul {
-  line-height: 1em;
-}
-
-#color-square {
-  display: inline-block;
-  margin-right: 2px;
-  height: 20px;
-  width: 40px;
 }
 
 h1 {

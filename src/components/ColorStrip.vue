@@ -3,8 +3,15 @@ const props = defineProps({
   colors: {
     type: Array,
     required: true
+  },
+  width: {
+    type: String,
+    required: false
   }
 })
+
+let boxWidth = props.width
+boxWidth ??= '35px'
 </script>
 <template>
   <ul>
@@ -15,10 +22,13 @@ const props = defineProps({
 ul {
   line-height: 1em;
 }
+
 li {
   display: inline-block;
   margin-right: 2px;
   height: 20px;
-  width: 38px;
+  width: v-bind(boxWidth);
+  margin-bottom: -3px;
+  margin-top: 3px;
 }
 </style>

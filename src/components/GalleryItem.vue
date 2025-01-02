@@ -1,5 +1,6 @@
 <script setup>
 import DesignData from './DesignData.vue'
+import ColorStrip from './ColorStrip.vue'
 
 const props = defineProps({
   image: {
@@ -9,102 +10,107 @@ const props = defineProps({
 })
 </script>
 <template>
-  <body>
-    <section id="image_container">
-      <img :src="'../../src/assets/images/' + image.url" :alt="image.title" />
-    </section>
-    <section id="title_container">
-      <h1>{{ props.image.title }}</h1>
-      <ul>
-        <li
-          class="color-square"
-          v-for="color in image.colors.slice(0, 12)"
-          :key="color"
-          :style="'background-color:' + color"
-        ></li>
-      </ul>
-    </section>
-    <section id="details_container">
-      <DesignData :design_data="image.design_data" />
-      <ul>
-        <li
-          class="color-square"
-          v-for="color in image.colors.slice(0, 12).reverse()"
-          :key="color"
-          :style="'background-color:' + color"
-        ></li>
-      </ul>
-    </section>
-    <section id="description_container">
-      <div class="description">{{ props.image.description }}</div>
-    </section>
-    <section id="mockup"><h1>Mock-up</h1></section>
-  </body>
+  <article>
+    <div id="grid">
+      <section id="image_container">
+        <div><img :src="'../../src/assets/images/' + image.url" :alt="image.title" /></div>
+      </section>
+      <section id="title_container">
+        <div>
+          <h1>{{ props.image.title }}</h1>
+        </div>
+        <div></div>
+      </section>
+      <section id="info_container">
+        <DesignData :design_data="image.design_data" />
+      </section>
+      <section id="description_container">
+        <div class="description">
+          {{ props.image.description }}
+        </div>
+      </section>
+      <section id="bottom_strip_container">
+        <div><ColorStrip :colors="image.colors.slice(1, 9).reverse()" /></div>
+        <div><ColorStrip :colors="image.colors.slice(1, 9)" /></div>
+      </section>
+      <section id="mockup">
+        <h1>Mock-up</h1>
+      </section>
+    </div>
+  </article>
 </template>
 
 <style scoped>
-body {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 1fr;
-  grid-template-rows: 1fr 6fr;
-  grid-template-areas:
-    'image title   description mockup'
-    'image details description mockup';
-  column-gap: 25px;
+article {
   height: 100vh;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 0.5fr;
+  grid-template-rows: 1fr 3fr 0.2fr;
+  grid-template-areas:
+    'image  title  title        mockup'
+    'image  info   description  mockup'
+    'image  strip  strip        mockup';
+  column-gap: 20px;
+  height: 700px;
 }
 
 #image_container {
   grid-area: image;
-  max-width: 900px;
-  height: auto;
+  align-self: center;
+}
+
+#image_container div {
+  max-height: 700px;
+  width: auto;
 }
 
 img {
-  width: auto;
   max-height: 700px;
+  max-width: 525px;
 }
 
 #title_container {
   grid-area: title;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
   line-height: 2.6em;
-  /* max-width: 340px; */
+}
+
+#title_container div {
+  border-bottom: 2px solid;
+}
+
+#bottom_strip_container {
+  grid-area: strip;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#bottom_strip_container div {
+  align-self: end;
+}
+
+#bottom_strip_container div:nth-child(even) {
+  text-align: right;
+}
+
+#info_container {
+  grid-area: info;
+  max-height: 700px;
 }
 
 h1 {
   font-size: 3em;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px solid;
-}
-
-ul {
-  line-height: 1em;
-}
-
-.color-square {
-  display: inline-block;
-  margin-right: 2px;
-  height: 20px;
-  width: 38px;
 }
 
 #description_container {
   grid-area: description;
-}
-
-.description {
-  line-height: 1.2em;
-  text-align: justify;
-}
-
-#details_container {
-  grid-area: details;
-}
-
-#details_container ul {
-  padding-top: 16px;
-  text-align: right;
 }
 
 #mockup {

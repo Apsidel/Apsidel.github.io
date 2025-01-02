@@ -50,7 +50,6 @@ const props = defineProps({
 </template>
 <style scoped>
 table {
-  padding-top: 15px;
   width: 100%;
 }
 
