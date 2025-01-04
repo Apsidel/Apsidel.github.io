@@ -66,4 +66,19 @@ console.log(props.data)
 #container:hover #overlay {
   opacity: 1;
 }
+
+@media (max-width: 960px) {
+  #grid {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (max-width: 640px) {
+  #grid {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
 </style>

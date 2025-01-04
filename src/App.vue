@@ -18,32 +18,46 @@ import MainTitle from './components/MainTitle.vue'
 </template>
 
 <style scoped>
-body {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-areas:
-    'nav  header'
-    'nav  content';
+@media (min-width: 320px) {
+  body {
+    display: inline-block;
+  }
+
+  header {
+    position: static;
+    line-height: 4.5em;
+  }
 }
 
-body > header {
-  grid-area: header;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background: rgb(255, 255, 255, 0.8);
-}
+@media (min-width: 1000px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-areas:
+      'nav  header'
+      'nav  content';
+  }
 
-body > nav {
-  grid-area: nav;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-}
+  body > header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: rgb(255, 255, 255, 0.8);
+  }
 
-body > section {
-  grid-area: content;
-  min-height: 750px;
+  body > nav {
+    grid-area: nav;
+    position: sticky;
+    display: initial;
+    top: 0;
+    height: 100vh;
+  }
+
+  body > section {
+    grid-area: content;
+    min-height: 750px;
+  }
 }
 
 .page-opacity-enter-active,
