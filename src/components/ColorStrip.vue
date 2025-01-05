@@ -7,11 +7,18 @@ const props = defineProps({
   width: {
     type: String,
     required: false
+  },
+  height: {
+    type: String,
+    required: false
   }
 })
 
 let boxWidth = props.width
 boxWidth ??= '35px'
+
+let boxHeight = props.height
+boxHeight ??= '20px'
 </script>
 <template>
   <ul>
@@ -26,7 +33,7 @@ ul {
 li {
   display: inline-block;
   margin-right: 2px;
-  height: 20px;
+  height: v-bind(boxHeight);
   width: v-bind(boxWidth);
   margin-bottom: -3px;
   margin-top: 3px;
