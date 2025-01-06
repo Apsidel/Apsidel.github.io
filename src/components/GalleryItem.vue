@@ -19,22 +19,34 @@ const props = defineProps({
         <div>
           <h1>{{ props.image.title }}</h1>
         </div>
-        <div></div>
-      </section>
-      <section id="info_container">
-        <DesignData :design_data="image.design_data" />
-      </section>
-      <section id="description_container">
-        <div class="description">
-          {{ props.image.description }}
+        <div>
+          <ColorStrip
+            :colors="image.colors.slice(0, 7).reverse()"
+            :width="'40px'"
+            :height="'22px'"
+          />
         </div>
       </section>
-      <section id="bottom_strip_container">
-        <div><ColorStrip :colors="image.colors.slice(1, 9).reverse()" /></div>
-        <div><ColorStrip :colors="image.colors.slice(1, 9)" /></div>
+      <section id="description_container">
+        <p>{{ props.image.description }}</p>
       </section>
-      <section id="mockup">
-        <h1>Mock-up</h1>
+      <section id="info_container">
+        <div><DesignData :design_data="image.design_data" /></div>
+      </section>
+      <section id="bottom_strip_container">
+        <div id="bottom_strip">
+          <ColorStrip
+            :colors="image.colors.slice(0, 7).reverse()"
+            :width="'40px'"
+            :height="'22px'"
+          />
+        </div>
+        <div id="subtitle">Designs &mdash; {{ props.image.title }}</div>
+      </section>
+      <section id="side_strip_container">
+        <!-- <div>
+          <ColorStrip :colors="image.colors.slice(2, 10)" :height="'50px'" :width="'20px'" />
+        </div> -->
       </section>
     </div>
   </article>
@@ -47,82 +59,94 @@ article {
 
 #grid {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 0.5fr;
-  grid-template-rows: 1fr 3fr 0.2fr;
+  grid-template-columns: min-content 300px 300px 20px;
+  grid-template-rows: 1fr 3.5fr 34px;
   grid-template-areas:
-    'image  title  title        mockup'
-    'image  info   description  mockup'
-    'image  strip  strip        mockup';
-  column-gap: 20px;
-  height: 700px;
+    'image  title         blank_a       blank_b'
+    'image  info          description   strip'
+    'image  bottom_strip  bottom_strip  strip';
+  column-gap: 25px;
+  max-height: 700px;
+  max-width: 1600px;
 }
 
 #image_container {
   grid-area: image;
-  align-self: center;
-}
-
-#image_container div {
-  max-height: 700px;
-  width: auto;
+  max-width: 525px;
+  margin-right: 10px;
 }
 
 img {
   max-height: 700px;
-  max-width: 525px;
+  width: auto;
 }
 
 #title_container {
   grid-area: title;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 20px;
-  line-height: 2.6em;
-}
-
-#title_container div {
-  border-bottom: 2px solid;
-}
-
-#bottom_strip_container {
-  grid-area: strip;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#bottom_strip_container div {
-  align-self: end;
-}
-
-#bottom_strip_container div:nth-child(even) {
-  text-align: right;
-}
-
-#info_container {
-  grid-area: info;
-  max-height: 700px;
+  line-height: 2.6rem;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #c5c3c3;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.2rem;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
 
+#info_container {
+  grid-area: info;
+  position: relative;
+  max-width: 300px;
+  padding-top: 10px;
+}
+
 #description_container {
   grid-area: description;
+  position: relative;
+  max-width: 400px;
 }
 
-#mockup {
-  grid-area: mockup;
-  height: 700px;
+#description_container p {
+  font-family: 'Roboto', serif;
+  font-weight: 300;
+  line-height: 1.4rem;
+  padding-top: 14px;
+}
+
+#bottom_strip_container {
+  grid-area: bottom_strip;
+  position: relative;
+  border-top: 2px solid #c5c3c3;
+}
+
+#bottom_strip {
+  padding-top: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: right;
+  font-weight: 200;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+#side_strip_container {
+  grid-area: strip;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
-  writing-mode: vertical-lr;
-  background-color: black;
 }
 
-#mockup h1 {
-  color: white;
-  border-style: none;
+#side_strip_container div {
+  grid-column: 2;
 }
 </style>

@@ -56,4 +56,9 @@ table {
 tr {
   line-height: 2.2em;
 }
+
+tr td:nth-child(2) {
+  font-family: roboto, sans-serif;
+  font-size: small;
+}
 </style>
