@@ -10,8 +10,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       <li><RouterLink to="/">Home</RouterLink></li>
       <li><RouterLink to="/designs">Designs</RouterLink></li>
       <li><RouterLink to="/photography">Photography</RouterLink></li>
+      <li><RouterLink to="/">Coding</RouterLink></li>
       <li><RouterLink to="/about">About</RouterLink></li>
-      <li><RouterLink to="/contact">Contact</RouterLink></li>
+      <!-- <li><RouterLink to="/contact">Contact</RouterLink></li> -->
       <li class="social-media">
         <a href="mailto:kent.soledispa@richmond.edu">
           <FontAwesomeIcon icon="fa-solid fa-envelope" />

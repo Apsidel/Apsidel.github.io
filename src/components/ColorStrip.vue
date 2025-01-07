@@ -15,10 +15,10 @@ const props = defineProps({
 })
 
 let boxWidth = props.width
-boxWidth ??= '35px'
+boxWidth ??= '40px'
 
 let boxHeight = props.height
-boxHeight ??= '20px'
+boxHeight ??= '22px'
 </script>
 <template>
   <ul>

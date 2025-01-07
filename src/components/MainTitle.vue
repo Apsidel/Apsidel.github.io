@@ -8,8 +8,8 @@
 <style scoped>
 header {
   font-family: 'Staatliches', Helvetica, sans-serif;
-  margin-top: 2em;
-  padding-bottom: 1.5em;
+  margin-top: 3.2em;
+  padding-bottom: 0.8em;
 }
 
 h1 {

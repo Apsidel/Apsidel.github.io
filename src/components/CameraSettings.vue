@@ -37,11 +37,19 @@ const props = defineProps({
 </template>
 <style scoped>
 table {
-  padding-top: 15px;
   width: 100%;
 }
 
 tr {
   line-height: 2.2em;
+}
+
+tr td:nth-child(2) {
+  font-family: roboto, sans-serif;
+  font-size: small;
+}
+
+th {
+  text-align: left;
 }
 </style>

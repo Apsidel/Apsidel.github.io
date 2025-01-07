@@ -20,11 +20,7 @@ const props = defineProps({
           <h1>{{ props.image.title }}</h1>
         </div>
         <div>
-          <ColorStrip
-            :colors="image.colors.slice(0, 7).reverse()"
-            :width="'40px'"
-            :height="'22px'"
-          />
+          <ColorStrip :colors="image.colors.slice(0, 7).reverse()" />
         </div>
       </section>
       <section id="description_container">
@@ -35,18 +31,9 @@ const props = defineProps({
       </section>
       <section id="bottom_strip_container">
         <div id="bottom_strip">
-          <ColorStrip
-            :colors="image.colors.slice(0, 7).reverse()"
-            :width="'40px'"
-            :height="'22px'"
-          />
+          <ColorStrip :colors="image.colors.slice(0, 7).reverse()" />
         </div>
         <div id="subtitle">Designs &mdash; {{ props.image.title }}</div>
-      </section>
-      <section id="side_strip_container">
-        <!-- <div>
-          <ColorStrip :colors="image.colors.slice(2, 10)" :height="'50px'" :width="'20px'" />
-        </div> -->
       </section>
     </div>
   </article>
@@ -59,12 +46,12 @@ article {
 
 #grid {
   display: grid;
-  grid-template-columns: min-content 300px 300px 20px;
+  grid-template-columns: min-content 300px 320px;
   grid-template-rows: 1fr 3.5fr 34px;
   grid-template-areas:
-    'image  title         blank_a       blank_b'
-    'image  info          description   strip'
-    'image  bottom_strip  bottom_strip  strip';
+    'image  title         blank'
+    'image  info          description'
+    'image  bottom_strip  bottom_strip';
   column-gap: 25px;
   max-height: 700px;
   max-width: 1600px;
@@ -96,15 +83,14 @@ h1 {
 
 #info_container {
   grid-area: info;
-  position: relative;
   max-width: 300px;
   padding-top: 10px;
 }
 
 #description_container {
   grid-area: description;
-  position: relative;
   max-width: 400px;
+  padding-left: 20px;
 }
 
 #description_container p {
@@ -125,7 +111,7 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0.5px;
 }
 
 #subtitle {
@@ -137,16 +123,5 @@ h1 {
   font-weight: 200;
   font-size: 1rem;
   font-style: normal;
-}
-
-#side_strip_container {
-  grid-area: strip;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-}
-
-#side_strip_container div {
-  grid-column: 2;
 }
 </style>
