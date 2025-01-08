@@ -16,10 +16,11 @@
         "#161617",
         "#000000"
       ],
+      "dimensions": [612, 792],
       "design_data": {
         "programs": "Adobe Illustrator",
         "file_type": "AI",
-        "dimensions": "2250x3000",
+        "dimensions": "612 x 792",
         "resolution": "72dpi",
         "color_mode": "CMYK",
         "design_type": "Magazine Cover"
@@ -44,10 +45,11 @@
         "#2C1C18",
         "#150E0F"
       ],
+      "dimensions": [720, 1008],
       "design_data": {
         "programs": "Adobe Illustrator",
         "file_type": "AI",
-        "dimensions": "2250x3000",
+        "dimensions": "720 x 1008",
         "resolution": "72dpi",
         "color_mode": "CMYK",
         "design_type": "Birthday Card"
@@ -73,10 +75,11 @@
         "#1D0500",
         "#030000"
       ],
+      "dimensions": [675, 900],
       "design_data": {
         "programs": "Adobe Photoshop",
         "file_type": "TIFF",
-        "dimensions": "2250x3000",
+        "dimensions": "2250 x 3000",
         "resolution": "72dpi",
         "color_mode": "CMYK",
         "design_type": "Poster",
@@ -90,10 +93,11 @@
       "title": "Bauhaus Typeface Poster",
       "description": "The main objective of this project was to become more familiar with some of the history of typography. For my poster, I was tasked with researching the history of the Bauhaus typeface and its creator Herbert Bayer. In creating the poster, I was able to apply my knowledge of the typography and design principles learnt in class. In addition, working on the poster gave me the opportunity to further develop my skills using Adobe Illustrator.",
       "colors": ["#FBFCFC", "#F7F6F0", "#FFF100", "#BDB8B6", "#5E5931", "#D02528", "#35363A"],
+      "dimensions": [792, 1224],
       "design_data": {
         "programs": "Adobe Illustrator",
         "file_type": "AI",
-        "dimensions": "2250x3000",
+        "dimensions": "792 x 1224",
         "resolution": "72dpi",
         "color_mode": "CMYK",
         "design_type": "Poster"
@@ -123,10 +127,11 @@
         "#997541",
         "#613A02"
       ],
+      "dimensions": [675, 900],
       "design_data": {
         "programs": "Adobe Photoshop",
         "file_type": "PSD",
-        "dimensions": "2250x3000",
+        "dimensions": "2700 x 3600",
         "resolution": "72dpi",
         "color_mode": "CMYK",
         "design_type": "Magazine Ad",
@@ -154,10 +159,11 @@
         "#101012",
         "#0C0809"
       ],
+      "dimensions": [695, 900],
       "design_data": {
         "programs": "Adobe Photoshop",
         "file_type": "PSD",
-        "dimensions": "2550x3300",
+        "dimensions": "2550 x 3300",
         "resolution": "72dpi",
         "color_mode": "CMYK",
         "design_type": "Magazine Ad",
@@ -181,14 +187,15 @@
         "#584F36",
         "#1F0F0C"
       ],
+      "dimensions": [900, 675],
       "design_data": {
         "programs": "Adobe Photoshop",
         "file_type": "TIFF",
-        "dimensions": "2250x3000",
+        "dimensions": "3000 x 32250",
         "resolution": "72dpi",
         "color_mode": "CMYK",
         "design_type": "Poster",
-        "event": "Hanfu Fashion Exhibition"
+        "brand": "Floret Garden"
       },
       "tags": ["city", "night", "skyline", "urban"]
     },
@@ -210,10 +217,11 @@
         "#4C534D",
         "#4B524D"
       ],
+      "dimensions": [612, 792],
       "design_data": {
         "programs": "Adobe Illustrator",
         "file_type": "AI",
-        "dimensions": "2250x3000",
+        "dimensions": "617 x 792",
         "resolution": "72dpi",
         "color_mode": "CMYK",
         "design_type": "Poster",
@@ -244,10 +252,11 @@
         "#12151E",
         "#0A0F17"
       ],
+      "dimensions": [1050, 750],
       "design_data": {
         "programs": "Adobe Photoshop",
         "file_type": "TIFF",
-        "dimensions": "2250x3000",
+        "dimensions": "2100 x 1500",
         "resolution": "72dpi",
         "color_mode": "CMYK",
         "design_type": "Postcard",
@@ -274,10 +283,11 @@
         "#040101",
         "#000000"
       ],
+      "dimensions": [696, 900],
       "design_data": {
         "programs": "Adobe Photoshop",
         "file_type": "TIFF",
-        "dimensions": "2250x3000",
+        "dimensions": "696 x 900",
         "resolution": "72dpi",
         "color_mode": "CMYK",
         "design_type": "Magazine Cover",

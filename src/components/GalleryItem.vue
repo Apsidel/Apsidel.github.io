@@ -8,10 +8,15 @@ const props = defineProps({
     required: true
   }
 })
+
+const width = props.image.dimensions[0]
+const height = props.image.dimensions[1]
+
+const isPortrait = height > width
 </script>
 <template>
   <article>
-    <div id="grid">
+    <div :class="isPortrait ? 'grid_portrait' : 'grid_landscape'">
       <section id="image_container">
         <div><img :src="'../../src/assets/images/' + image.url" :alt="image.title" /></div>
       </section>
@@ -23,14 +28,17 @@ const props = defineProps({
           <ColorStrip :colors="image.colors.slice(0, 7).reverse()" />
         </div>
       </section>
-      <section id="description_container">
+      <section
+        id="description_container"
+        :class="isPortrait ? 'description_portrait' : 'description_landscape'"
+      >
         <p>{{ props.image.description }}</p>
       </section>
       <section id="info_container">
         <div><DesignData :design_data="image.design_data" /></div>
       </section>
       <section id="bottom_strip_container">
-        <div id="bottom_strip">
+        <div id="bottom_strip" :class="{ strip_landscape: !isPortrait }">
           <ColorStrip :colors="image.colors.slice(0, 7).reverse()" />
         </div>
         <div id="subtitle">Designs &mdash; {{ props.image.title }}</div>
@@ -41,10 +49,23 @@ const props = defineProps({
 
 <style scoped>
 article {
-  height: 100vh;
+  min-height: 900px;
 }
 
-#grid {
+.grid_landscape {
+  display: grid;
+  grid-template-columns: min-content 300px;
+  grid-template-rows: 1fr 3fr 34px 210px;
+  grid-template-areas:
+    'image        title'
+    'image        info'
+    'image        bottom_strip'
+    'description  bottom_strip';
+  column-gap: 25px;
+  border-bottom: 2px solid #c5c3c3;
+}
+
+.grid_portrait {
   display: grid;
   grid-template-columns: min-content 300px 320px;
   grid-template-rows: 1fr 3.5fr 34px;
@@ -59,18 +80,19 @@ article {
 
 #image_container {
   grid-area: image;
-  max-width: 525px;
+  max-height: 700px;
   margin-right: 10px;
 }
 
 img {
   max-height: 700px;
-  width: auto;
+  max-width: 910px;
 }
 
 #title_container {
   grid-area: title;
   line-height: 2.6rem;
+  max-height: min-content;
   padding-bottom: 20px;
   border-bottom: 2px solid #c5c3c3;
 }
@@ -89,15 +111,13 @@ h1 {
 
 #description_container {
   grid-area: description;
-  max-width: 400px;
-  padding-left: 20px;
+  padding-top: 14px;
 }
 
 #description_container p {
   font-family: 'Roboto', serif;
   font-weight: 300;
   line-height: 1.4rem;
-  padding-top: 14px;
 }
 
 #bottom_strip_container {
@@ -107,7 +127,6 @@ h1 {
 }
 
 #bottom_strip {
-  padding-top: 30px;
   position: absolute;
   left: 0;
   right: 0;
@@ -123,5 +142,22 @@ h1 {
   font-weight: 200;
   font-size: 1rem;
   font-style: normal;
+}
+
+.description_portrait {
+  padding-left: 20px;
+}
+
+.description_landscape {
+  column-count: 2;
+  column-gap: 25px;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+.strip_landscape {
+  top: 0;
+  height: 40px;
+  padding-top: 4px;
 }
 </style>
