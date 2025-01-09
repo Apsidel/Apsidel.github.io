@@ -102,9 +102,6 @@ h1 {
 }
 
 #description_container p {
-  font-family: 'Roboto', serif;
-  font-weight: 300;
-  line-height: 1.4rem;
   padding-top: 14px;
   height: min-content;
 }

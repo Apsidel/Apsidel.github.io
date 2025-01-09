@@ -49,7 +49,7 @@ const isPortrait = height > width
 
 <style scoped>
 article {
-  min-height: 900px;
+  height: 100vh;
 }
 
 .grid_landscape {
@@ -112,12 +112,6 @@ h1 {
 #description_container {
   grid-area: description;
   padding-top: 14px;
-}
-
-#description_container p {
-  font-family: 'Roboto', serif;
-  font-weight: 300;
-  line-height: 1.4rem;
 }
 
 #bottom_strip_container {

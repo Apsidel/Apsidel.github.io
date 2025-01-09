@@ -31,6 +31,12 @@ li, main, nav, ol, p, section, span, ul {
 	box-sizing: border-box;
 }
 
+p {
+  font-family: 'Roboto', serif;
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+
 @media (max-width: 640px) {
   #app {
     margin: 20px;
