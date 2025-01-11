@@ -100,8 +100,9 @@ ul {
 }
 
 li {
+  font-family: 'Spline Sans Mono', Helvetica, sans-serif;
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 2.5rem;
 }
 
@@ -119,6 +120,10 @@ li div {
 a {
   text-decoration: none;
   color: #272626;
+}
+
+a div:hover {
+  text-decoration: underline;
 }
 
 #bottom_strip {
