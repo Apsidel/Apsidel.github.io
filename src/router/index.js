@@ -6,7 +6,7 @@ import GalleryItemView from '@/views/GalleryItemView.vue';
 import PhotoItemView from '@/views/PhotoItemView.vue';
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
