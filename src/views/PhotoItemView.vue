@@ -21,7 +21,7 @@ console.log(image)
   <article>
     <div id="grid">
       <section id="image_container">
-        <div><img :src="'../../src/assets/images/' + image.url" :alt="image.title" /></div>
+        <div><img :src="'../../public/images/' + image.url" :alt="image.title" /></div>
       </section>
       <section id="title_container">
         <div>

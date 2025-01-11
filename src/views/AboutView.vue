@@ -48,7 +48,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
         </div>
       </section>
       <section id="image_container">
-        <img src="../../src/assets/images/Oso_vector.svg" alt="Akita Inu" />
+        <img src="../../public/images/Oso_vector.svg" alt="Akita Inu" />
       </section>
     </div>
   </article>
