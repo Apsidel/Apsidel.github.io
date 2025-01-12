@@ -11,7 +11,7 @@ console.log(props.data)
   <section id="grid">
     <div id="container" v-for="image in data" :key="image.id">
       <RouterLink :to="{ name: routeName, params: { id: image.id }, props: { id: image.id } }">
-        <img :src="'./public/images/' + image.url" :alt="image.title" />
+        <img :src="'/images/' + image.url" :alt="image.title" />
         <div id="overlay">{{ image.title }}</div>
       </RouterLink>
     </div>

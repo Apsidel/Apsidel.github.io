@@ -1,7 +1,6 @@
 <script setup>
 import DesignData from './DesignData.vue'
 import ColorStrip from './ColorStrip.vue'
-
 const props = defineProps({
   image: {
     type: Object,
@@ -18,7 +17,7 @@ const isPortrait = height > width
   <article>
     <div :class="isPortrait ? 'grid_portrait' : 'grid_landscape'">
       <section id="image_container">
-        <div><img :src="'../../public/images/' + image.url" :alt="image.title" /></div>
+        <div><img :src="'/images/' + image.url" :alt="image.title" /></div>
       </section>
       <section id="title_container">
         <div>
