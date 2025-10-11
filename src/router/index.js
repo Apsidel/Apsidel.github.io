@@ -4,6 +4,7 @@ import DesignView from '@/views/DesignView.vue';
 import PhotographyView from '@/views/PhotographyView.vue';
 import GalleryItemView from '@/views/GalleryItemView.vue';
 import PhotoItemView from '@/views/PhotoItemView.vue';
+import ProgrammingView from '@/views/ProgrammingView.vue';
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -21,6 +22,11 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
+    },
+    {
+      path: '/programming',
+      name: 'programming',
+      component: ProgrammingView,
     },
     {
       path: '/designs',

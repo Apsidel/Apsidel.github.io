@@ -7,11 +7,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       <li id="logo">
         <RouterLink to="/"><img src="./../assets/logo-stripes.svg" /></RouterLink>
       </li>
-      <li><RouterLink to="/">Home</RouterLink></li>
-      <li><RouterLink to="/designs">Designs</RouterLink></li>
-      <li><RouterLink to="/photography">Photography</RouterLink></li>
-      <li>Coding</li>
+      <!-- <li><RouterLink to="/">Home</RouterLink></li>       -->
       <li><RouterLink to="/about">About</RouterLink></li>
+      <li><RouterLink to="/programming">Programming</RouterLink></li>
+      <li><RouterLink to="/designs">Graphic Design</RouterLink></li>
+      <li><RouterLink to="/photography">Photography</RouterLink></li>
       <li class="social-media">
         <a href="mailto:kent.soledispa@richmond.edu">
           <FontAwesomeIcon icon="fa-solid fa-envelope" />
@@ -47,7 +47,6 @@ a.router-link-exact-active {
 ul {
   font-family: 'Spline Sans Mono', Helvetica, sans-serif;
   color: #272626;
-  min-width: 112px;
 }
 
 ul li {
@@ -85,7 +84,7 @@ ul li {
   body {
     display: grid;
     column-count: 2;
-    column-gap: 2.4em;
+    column-gap: 2.8em;
     margin-top: 3.6em;
     margin-left: 1em;
   }
@@ -101,6 +100,7 @@ ul li {
   ul li {
     display: inherit;
     width: inherit;
+    min-width: 140px;
     margin-inline: inherit;
   }
 

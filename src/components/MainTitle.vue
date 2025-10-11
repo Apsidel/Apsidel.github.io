@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>Kent Soledispa<span class="red">.</span></h1>
-    <h3>Graphic Designer & Software Developer</h3>
+    <h3>Software Engineer &nbsp; | &nbsp; Graphic Designer</h3>
   </header>
 </template>
 
