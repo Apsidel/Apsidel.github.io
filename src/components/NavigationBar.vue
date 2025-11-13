@@ -1,39 +1,31 @@
 <script setup>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import ContactIconsHorizontal from './ContactIconsHorizontal.vue'
 </script>
 <template>
   <body>
-    <ul>
-      <li id="logo">
+    <div id="item-container">
+      <div id="logo">
         <RouterLink to="/"><img src="./../assets/logo-stripes.svg" /></RouterLink>
-      </li>
-      <!-- <li><RouterLink to="/">Home</RouterLink></li>       -->
-      <li><RouterLink to="/about">About</RouterLink></li>
-      <li><RouterLink to="/programming">Programming</RouterLink></li>
-      <li><RouterLink to="/designs">Graphic Design</RouterLink></li>
-      <li><RouterLink to="/photography">Photography</RouterLink></li>
-      <li class="social-media">
-        <a href="mailto:kent.soledispa@richmond.edu">
-          <FontAwesomeIcon icon="fa-solid fa-envelope" />
-        </a>
-      </li>
-      <li class="social-media">
-        <a href="https://github.com/Apsidel"><FontAwesomeIcon icon="fa-brands fa-github" /></a>
-      </li>
-      <li class="social-media">
-        <a href="https://www.linkedin.com/in/kent-soledispa-a9b60b227/">
-          <FontAwesomeIcon icon="fa-brands fa-linkedin" />
-        </a>
-      </li>
-    </ul>
-    <div id="bar"></div>
+      </div>
+      <div id="list-container">
+        <ul>
+          <!-- <li><RouterLink to="/">Home</RouterLink></li>       -->
+          <li><RouterLink to="/about">About</RouterLink></li>
+          <li><RouterLink to="/programming">Programming</RouterLink></li>
+          <li><RouterLink to="/designs">Graphic Design</RouterLink></li>
+          <li><RouterLink to="/photography">Photography</RouterLink></li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div id="contact-icons"><ContactIconsHorizontal /></div>
+    </div>
   </body>
 </template>
 
 <style scoped>
 a {
   text-decoration: none;
-  color: #272626;
+  color: var(--black);
 }
 
 a:hover {
@@ -46,12 +38,12 @@ a.router-link-exact-active {
 
 ul {
   font-family: 'Spline Sans Mono', Helvetica, sans-serif;
-  color: #272626;
+  color: var(--black);
 }
 
 ul li {
   list-style: none;
-  padding-bottom: 2.5em;
+  padding-bottom: 2.4em;
 }
 
 @media (min-width: 320px) {
@@ -69,7 +61,7 @@ ul li {
   }
 
   #logo,
-  .social-media {
+  #contact-icons {
     display: none;
   }
 }
@@ -80,53 +72,49 @@ ul li {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body {
-    display: grid;
-    column-count: 2;
-    column-gap: 2.8em;
-    margin-top: 3.6em;
-    margin-left: 1em;
+    min-height: 100vh;
   }
 
-  ul {
-    grid-column: 1;
+  #item-container {
+    position: relative;
+    margin-top: 3.6em;
+    margin-left: 0.8em;
+    min-height: 80vh;
+  }
+
+  #list-container {
+    display: block;
+    align-content: center;
+    min-height: 500px;
+    border-right: 1.3px solid var(--light-gray);
     font-family: 'Spline Sans Mono', Helvetica, sans-serif;
-    color: #272626;
-    text-align: left;
-    min-width: 112px;
+    color: var(--black);
   }
 
   ul li {
     display: inherit;
     width: inherit;
-    min-width: 140px;
+    min-width: 168px;
     margin-inline: inherit;
-  }
-
-  .social-media {
-    display: inline-block;
-    padding-right: 10px;
-    height: 1.8rem;
-    font-size: 1.8rem;
-  }
-
-  #bar {
-    grid-column: 2;
-    height: 502px;
-    width: 1.2px;
-    margin-top: 10em;
-    margin-left: 14px;
-    background-color: #c5c3c3;
+    text-align: left;
   }
 
   #logo {
     display: inherit;
-    padding-bottom: 10em;
+    padding-bottom: 4.2em;
   }
 
   #logo img {
     height: 64px;
+  }
+
+  #contact-icons {
+    display: inherit;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
   }
 }
 </style>
