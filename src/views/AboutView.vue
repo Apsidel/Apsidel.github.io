@@ -14,11 +14,31 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
             ultricies dui vel? Natoque iaculis malesuada tincidunt sociosqu facilisis. Sed nisl
             taciti leo proin enim class. Imperdiet et sollicitudin ut vitae enim efficitur
             fermentum. Fringilla fames sollicitudin imperdiet nascetur fusce metus litora. Tincidunt
-            magnis dui laoreet orci aliquam pretium nam. Natoque facilisis at accumsan placerat,
-            imperdiet curae dis mi. Nisi eleifend ornare facilisis mattis gravida, volutpat eget.
-            Quam elementum neque convallis urna diam netus. Blandit duis quisque vehicula adipiscing
-            metus est metus phasellus posuere. Netus dui augue dictumst donec ultrices ad ipsum per.
+            magnis dui laoreet orci aliquam pretium nam.
           </p>
+        </div>
+        <div class="text_block">
+          <h1>Skills</h1>
+          <div>Frontend</div>
+          <ul>
+            <li><FontAwesomeIcon icon="fa-brands fa-square-js" />JavaScript</li>
+            <li><FontAwesomeIcon icon="fa-brands fa-node-js" />Node.js</li>
+            <li><FontAwesomeIcon icon="fa-brands fa-vuejs" />Vue.js</li>
+            <li><FontAwesomeIcon icon="fa-brands fa-html5" />Html</li>
+            <li><FontAwesomeIcon icon="fa-brands fa-css3-alt" />CSS</li>
+          </ul>
+          <div>Backend</div>
+          <ul>
+            <li><FontAwesomeIcon icon="fa-brands fa-java" />Java</li>
+            <li><FontAwesomeIcon icon="fa-solid fa-leaf" />Spring Boot</li>
+          </ul>
+          <div>Tools And DevOps</div>
+          <ul>
+            <li><FontAwesomeIcon icon="fa-brands fa-git-alt" />Git</li>
+            <li><FontAwesomeIcon icon="fa-brands fa-jenkins" />Jenkins</li>
+            <li><FontAwesomeIcon icon="fa-solid fa-square-check" />Unit Testing</li>
+            <li><FontAwesomeIcon icon="fa-solid fa-code-compare" />Agile Methodologies</li>
+          </ul>
         </div>
         <div class="text_block">
           <h2>Contact Me</h2>
@@ -89,6 +109,7 @@ img {
 
 h1 {
   font-size: 2rem;
+  letter-spacing: 1px;
 }
 
 p {
@@ -112,14 +133,14 @@ li div {
 }
 
 .icon {
-  font-size: 2rem;
-  padding-right: 20px;
+  font-size: 1.6rem;
+  padding-right: 12px;
   line-height: 2rem;
 }
 
 a {
   text-decoration: none;
-  color: #272626;
+  color: var(--black);
 }
 
 a div:hover {
@@ -131,6 +152,6 @@ a div:hover {
   left: 0;
   right: 0;
   text-align: right;
-  border-top: 2px solid #c5c3c3;
+  border-top: 2px solid var(--light-gray);
 }
 </style>

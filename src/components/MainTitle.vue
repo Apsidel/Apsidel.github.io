@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>Kent Soledispa<span class="red">.</span></h1>
+    <h1>Kent Soledispa<span id="red">.</span></h1>
     <h3>Software Engineer &nbsp; | &nbsp; Graphic Designer</h3>
   </header>
 </template>
@@ -20,5 +20,9 @@ h1 {
 h3 {
   font-weight: 400;
   margin-top: -0.8em;
+}
+
+#red {
+  color: var(--red);
 }
 </style>

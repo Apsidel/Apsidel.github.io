@@ -10,7 +10,7 @@
 
 <style scoped>
 .yellow-box {
-  background-color: #ffec49;
+  background-color: var(--yellow);
   border-radius: 0px 500px 0px 0px;
   height: 493px;
   width: 1048px;
@@ -21,7 +21,7 @@
 }
 
 .blue-box {
-  background-color: #5a61ff;
+  background-color: var(--blue);
   border-radius: 0px 150px 0px 0px;
   height: 240px;
   width: 517px;
@@ -30,14 +30,14 @@
 }
 
 .red-box {
-  background-color: #ff5a5a;
+  background-color: var(--red);
   border-radius: 0px 0px 0px 150px;
   height: 240px;
   width: 517px;
   display: inline-block;
 }
 .content-box {
-  background-color: #272626;
+  background-color: var(--black);
   width: 1070px;
   height: 755px;
   margin-right: 60px;

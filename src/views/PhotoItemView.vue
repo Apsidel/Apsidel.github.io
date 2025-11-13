@@ -80,7 +80,7 @@ img {
   line-height: 2.6rem;
   max-height: min-content;
   padding-bottom: 20px;
-  border-bottom: 2px solid #c5c3c3;
+  border-bottom: 2px solid var(--light-gray);
 }
 
 h1 {
@@ -93,7 +93,7 @@ h1 {
   grid-area: info;
   max-width: 300px;
   padding-top: 10px;
-  border-top: 2px solid #c5c3c3;
+  border-top: 2px solid var(--light-gray);
 }
 
 #description_container {
@@ -109,7 +109,7 @@ h1 {
 #bottom_strip_container {
   grid-area: bottom_strip;
   position: relative;
-  border-top: 2px solid #c5c3c3;
+  border-top: 2px solid var(--light-gray);
 }
 
 #bottom_strip {
