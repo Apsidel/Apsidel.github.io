@@ -1,7 +1,7 @@
 <template>
   <header>
-    <h1>Kent Soledispa<span id="red">.</span></h1>
-    <h3>Software Engineer &nbsp; | &nbsp; Graphic Designer</h3>
+    <h1>Kent Soledispa<span id="red-dot">.</span></h1>
+    <h3><span id="blue">Software Engineer</span> &nbsp; | &nbsp; <span id="red">Graphic Designer</span></h3>
   </header>
 </template>
 
@@ -22,7 +22,15 @@ h3 {
   margin-top: -0.8em;
 }
 
-#red {
+#red-dot {
+  color: var(--red);
+}
+
+#blue:hover {
+  color: var(--blue);
+}
+
+#red:hover {
   color: var(--red);
 }
 </style>

@@ -1,70 +1,74 @@
 <script setup>
 import ColorStrip from '@/components/ColorStrip.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import SkillsTable from '@/components/SkillsTable.vue'
+import ContactIcons from '@/components/ContactIcons.vue'
+
+const skill_icons = new Map([
+  ['Vue.js', 'fa-brands fa-vuejs'],
+  ['Node.js', 'fa-brands fa-node-js'],
+  ['JavaScript', 'fa-brands fa-square-js'],
+  ['HTML', 'fa-brands fa-html5'],
+  ['CSS', 'fa-brands fa-css3-alt'],
+  ['Java', 'fa-brands fa-java'],
+  ['Spring Boot', 'fa-solid fa-leaf'],
+  ['Git', 'fa-brands fa-git-alt'],
+  ['Jenkins', 'fa-brands fa-jenkins'],
+  ['Unit Testing', 'fa-solid fa-square-check'],
+  ['Agile Methodologies', 'fa-solid fa-code-compare']
+])
 </script>
 <template>
   <article>
     <div id="grid">
-      <section id="text_container">
-        <div class="text_block">
+      <section id="info_container">
+        <section class="subsection">
           <h1>About</h1>
           <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Vel donec tincidunt; nunc urna nisi
-            magnis. Vulputate natoque suscipit hac, sociosqu molestie mauris. Est euismod facilisis
-            ultricies dui vel? Natoque iaculis malesuada tincidunt sociosqu facilisis. Sed nisl
-            taciti leo proin enim class. Imperdiet et sollicitudin ut vitae enim efficitur
-            fermentum. Fringilla fames sollicitudin imperdiet nascetur fusce metus litora. Tincidunt
-            magnis dui laoreet orci aliquam pretium nam.
+            I am a software engineer and graphic designer with a background and interest in web and
+            UI/UX design. In May of 2022, I graduated from the
+            <a href="https://www.richmond.edu/">University of Richmond</a> with a Bachelor of
+            Science in Computer Science, which provided me with a strong foundation in software and
+            web development. After working for a year as a software engineer, I decided to return to
+            school and pursue an Associate of Applied Science in Graphic Design from
+            <a href="https://www.vpcc.edu/">Virginia Peninsula Community College</a> to gain a
+            better understanding of design principles and practices that could be applied back to my
+            knowledge of app and web development<span class="blinking_text">_</span>
           </p>
-        </div>
-        <div class="text_block">
+        </section>
+        <section class="subsection">
           <h1>Skills</h1>
-          <div>Frontend</div>
-          <ul>
-            <li><FontAwesomeIcon icon="fa-brands fa-square-js" />JavaScript</li>
-            <li><FontAwesomeIcon icon="fa-brands fa-node-js" />Node.js</li>
-            <li><FontAwesomeIcon icon="fa-brands fa-vuejs" />Vue.js</li>
-            <li><FontAwesomeIcon icon="fa-brands fa-html5" />Html</li>
-            <li><FontAwesomeIcon icon="fa-brands fa-css3-alt" />CSS</li>
-          </ul>
-          <div>Backend</div>
-          <ul>
-            <li><FontAwesomeIcon icon="fa-brands fa-java" />Java</li>
-            <li><FontAwesomeIcon icon="fa-solid fa-leaf" />Spring Boot</li>
-          </ul>
-          <div>Tools And DevOps</div>
-          <ul>
-            <li><FontAwesomeIcon icon="fa-brands fa-git-alt" />Git</li>
-            <li><FontAwesomeIcon icon="fa-brands fa-jenkins" />Jenkins</li>
-            <li><FontAwesomeIcon icon="fa-solid fa-square-check" />Unit Testing</li>
-            <li><FontAwesomeIcon icon="fa-solid fa-code-compare" />Agile Methodologies</li>
-          </ul>
-        </div>
-        <div class="text_block">
+          <SkillsTable :skills="['Vue.js', 'Node.js', 'JavaScript', 'HTML', 'CSS']">
+            <template v-slot:title>Frontend</template>
+            <template v-slot="{ item: skill }">
+              <span
+                ><FontAwesomeIcon :icon="skill_icons.get(skill)" class="icon" /> {{ skill }}</span
+              >
+            </template>
+          </SkillsTable>
+          <SkillsTable :skills="['Java', 'Spring Boot']">
+            <template v-slot:title>Backend</template>
+            <template v-slot="{ item: skill }">
+              <span
+                ><FontAwesomeIcon :icon="skill_icons.get(skill)" class="icon" /> {{ skill }}</span
+              >
+            </template>
+          </SkillsTable>
+          <SkillsTable :skills="['Git', 'Jenkins', 'Unit Testing', 'Agile Methodologies']">
+            <template v-slot:title>Tools & DevOps</template>
+            <template v-slot="{ item: skill }">
+              <span
+                ><FontAwesomeIcon :icon="skill_icons.get(skill)" class="icon" /> {{ skill }}</span
+              >
+            </template>
+          </SkillsTable>
+        </section>
+        <section class="subsection">
           <h2>Contact Me</h2>
-          <ul>
-            <li>
-              <a href="mailto:kent.soledispa@richmond.edu">
-                <div class="icon"><FontAwesomeIcon icon="fa-solid fa-envelope" /></div>
-                <div>Email</div></a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/Apsidel">
-                <div class="icon"><FontAwesomeIcon icon="fa-brands fa-github" /></div>
-                <div>Github</div></a
-              >
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/kent-soledispa-a9b60b227/">
-                <div class="icon"><FontAwesomeIcon icon="fa-brands fa-linkedin" /></div>
-                <div>LinkedIn</div></a
-              >
-            </li>
-          </ul>
-        </div>
+          <div id="contact_me"><ContactIcons :is-vertical="true" /></div>
+        </section>
         <div id="bottom_strip">
-          <ColorStrip :colors="['#FF5B5B', '#5B61FF', '#FFED49']"></ColorStrip>
+          <ColorStrip :colors="['#FF5B5B', '#5B61FF', '#FFED49']" />
         </div>
       </section>
       <section id="image_container">
@@ -74,6 +78,15 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   </article>
 </template>
 <style scoped>
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 article {
   min-height: 100vh;
 }
@@ -85,7 +98,7 @@ article {
   grid-template-columns: 1fr 1fr;
 }
 
-#text_container {
+#info_container {
   grid-column: 1;
   max-width: 500px;
   position: relative;
@@ -93,18 +106,19 @@ article {
 
 #image_container {
   grid-column: 2;
-  text-align: center;
+  padding-left: 30px;
 }
 
 img {
+  position: fixed;
   max-width: 450px;
   height: auto;
   object-fit: cover;
 }
 
-.text_block {
+.subsection {
   max-width: 520px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 h1 {
@@ -112,39 +126,34 @@ h1 {
   letter-spacing: 1px;
 }
 
+h2 {
+  font-weight: 200;
+}
+
 p {
-  padding-top: 12px;
-}
-
-ul {
-  padding-top: 12px;
-}
-
-li {
-  font-family: 'Spline Sans Mono', Helvetica, sans-serif;
-  list-style: none;
-  font-size: 1rem;
-  line-height: 2.5rem;
-}
-
-li div {
-  display: inline-block;
-  vertical-align: middle;
+  padding-top: 8px;
+  text-align: justify;
+  line-height: 1.6em;
 }
 
 .icon {
-  font-size: 1.6rem;
-  padding-right: 12px;
-  line-height: 2rem;
-}
-
-a {
-  text-decoration: none;
+  font-size: 1.6em;
   color: var(--black);
 }
 
-a div:hover {
-  text-decoration: underline;
+#contact_me {
+  padding: 18px;
+  padding-top: 0px;
+}
+
+.blinking_text {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 #bottom_strip {
@@ -153,5 +162,6 @@ a div:hover {
   right: 0;
   text-align: right;
   border-top: 2px solid var(--light-gray);
+  bottom: 20px;
 }
 </style>

@@ -1,5 +1,5 @@
 <script setup>
-import ContactIconsHorizontal from './ContactIconsHorizontal.vue'
+import ContactIcons from './ContactIcons.vue'
 </script>
 <template>
   <body>
@@ -17,7 +17,7 @@ import ContactIconsHorizontal from './ContactIconsHorizontal.vue'
           <li>Contact</li>
         </ul>
       </div>
-      <div id="contact-icons"><ContactIconsHorizontal /></div>
+      <div id="contact-icons"><ContactIcons /></div>
     </div>
   </body>
 </template>
